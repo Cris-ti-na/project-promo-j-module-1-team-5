@@ -1,19 +1,39 @@
-.header-group-name {
+:root {
+  /*COLORS*/
+  --primary-color: #099d8d;
+  /*dark blue-green */
+  --secondary-color: #14d9c4;
+  /*aqua*/
+  --light-color: #ffffff;
+  /* white*/
+  --lightgray-color: #b8b8b9;
+  /*cool-grey*/
+  --darkgrey-color: #54585a;
+  /*dark grey gunmetal*/
+  --dark-color: #000000;
+  /* black */
+  /*FONTS*/
+  --primary-font: Rubik-Medium;
+  --secondary-font: OpenSans;
+  --other-font: Opensans-Semibold;
+}
+
+/* .header-group-name {
   background-color: blue-green #099d8d;
-  font-family: Rubik-Medium;
+  --primary-font: Rubik-Medium;
   font-size: 16px;
-  color: white;
+  --light-color: ffffff; 
 }
 
 header.nav {
   background-color: aqua #14d9c4;
-  color: white;
+  --light-color: #ffffff;
   font-size: 15px;
-  font-family: Rubik-Medium;
+  --primary-font: Rubik-Medium;
 }
 
 header.claim {
-  color: #000000;
+  --dark-color: #000000;
   font-family: OpenSans-Semibold;
   background-color: white;
   font-size: 18px;
@@ -83,6 +103,8 @@ header.claim {
 }
 
 /*footer*/
+
+/*
 .nombre-grupo {
   font-size: 14px;
   color: cool-grey#b8b8b9;
@@ -96,3 +118,5 @@ header.claim {
   align-content: center;
   font-family: OpenSans-Semibold;
 }
+
+*/
