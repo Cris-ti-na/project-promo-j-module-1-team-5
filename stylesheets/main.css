@@ -24,8 +24,8 @@
   font-size: 16px;
   --light-color: ffffff; 
 }
-
-header.nav {
+/*MENÚ NAVEGACIÓN*/
+.header.menu {
   background-color: aqua #14d9c4;
   --light-color: #ffffff;
   font-size: 15px;
@@ -38,15 +38,15 @@ header.claim {
   background-color: white;
   font-size: 18px;
 }
-
-.section-team {
+/*EQUIPO*/
+.team {
   color: blue-green #099d8d;
   font-family: Rubik-Medium;
   align-content: center;
   font-size: 24px;
   background-color: white;
 }
-.section-equipo-text {
+.team.text {
   color: #gunmetal#54585a;
   font-family: OpenSans;
   align-content: center;
@@ -54,48 +54,44 @@ header.claim {
   color: #000000;
   background-color: white;
 }
-
-.section-fordeb-title {
+/*FORTALEZAS & DEBILIDADES*/
+.skills.title {
   color: blue-green #099d8d;
   font-family: Rubik-Medium;
   align-content: center;
   font-size: 22px;
   background-color: cool-grey #b8b8b9;
 }
-
-.section-fordeb-text {
+.skills.text {
   color: #gunmetal#54585a;
   font-family: OpenSans;
   align-content: center;
   font-size: 16px;
   background-color: cool-grey #b8b8b9;
 }
-
-.section-aboutus {
+/*QUIÉNES SOMOS*/
+.aboutus {
   color: blue-green #099d8d;
   font-family: Rubik-Medium;
   size: 24px;
   align-content: center;
   background-color: white;
 }
-
-.section-aboutus-name {
+.aboutus-name {
   color: black;
   font-size: 20px;
   font-family: OpenSans;
   background-color: white;
   align-content: center;
 }
-
-.section-aboutus-text {
+.aboutus-text {
   color: gunmetal #54585a;
   font-size: 16px;
   font-family: OpenSans;
   background-color: white;
   align-content: center;
 }
-
-.section-aboutus-icon {
+.aboutus-icon {
   color: blue-green #099d8d;
   font-size: 16px;
   background-color: white;
@@ -111,8 +107,7 @@ header.claim {
   align-content: center;
   font-family: OpenSans;
 }
-
-.submenu {
+.footer.menu {
   font-size: 14px;
   color: gunmetal #54585a;
   align-content: center;
