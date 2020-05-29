@@ -45,7 +45,7 @@
   background-position: center;
 }
 
-.hero.claim {
+.hero-claim {
   --dark-color: #000000;
   font-family: OpenSans-Semibold;
   background-color: white;
