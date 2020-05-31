@@ -18,65 +18,88 @@
   --other-font: Opensans-Semibold;
 }
 
+.wrapper {
+  border: 1px solid red;
+}
 /* .header-group-name {
   background-color: blue-green #099d8d;
   --primary-font: Rubik-Medium;
   font-size: 16px;
   --light-color: ffffff; 
-}
+} */
+
 /*MENÚ NAVEGACIÓN*/
+
 .header.menu {
-  background-color: aqua #14d9c4;
+  background-color: #14d9c4;
   --light-color: #ffffff;
   font-size: 15px;
   --primary-font: Rubik-Medium;
 }
 
-header.claim {
+/*HERO*/
+.hero-img {
+  height: 300px;
+  background-image: url ("");
+  background-color: var(--secondary-color);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-claim {
   --dark-color: #000000;
   font-family: OpenSans-Semibold;
   background-color: white;
   font-size: 18px;
 }
+
 /*EQUIPO*/
+
 .team {
-  color: blue-green #099d8d;
+  color: #099d8d;
   font-family: Rubik-Medium;
   align-content: center;
   font-size: 24px;
   background-color: white;
 }
+
 .team.text {
-  color: #gunmetal#54585a;
+  color: #54585a;
   font-family: OpenSans;
   align-content: center;
   font-size: 16px;
   color: #000000;
   background-color: white;
 }
+
 /*FORTALEZAS & DEBILIDADES*/
+
 .skills.title {
-  color: blue-green #099d8d;
+  color: #099d8d;
   font-family: Rubik-Medium;
   align-content: center;
   font-size: 22px;
-  background-color: cool-grey #b8b8b9;
+  background-color: b8b8b9;
 }
+
 .skills.text {
-  color: #gunmetal#54585a;
+  color: #54585a;
   font-family: OpenSans;
   align-content: center;
   font-size: 16px;
-  background-color: cool-grey #b8b8b9;
+  background-color: #b8b8b9;
 }
+
 /*QUIÉNES SOMOS*/
+
 .aboutus {
-  color: blue-green #099d8d;
+  color: #099d8d;
   font-family: Rubik-Medium;
   size: 24px;
   align-content: center;
   background-color: white;
 }
+
 .aboutus-name {
   color: black;
   font-size: 20px;
@@ -84,15 +107,17 @@ header.claim {
   background-color: white;
   align-content: center;
 }
+
 .aboutus-text {
-  color: gunmetal #54585a;
+  color: #54585a;
   font-size: 16px;
   font-family: OpenSans;
   background-color: white;
   align-content: center;
 }
+
 .aboutus-icon {
-  color: blue-green #099d8d;
+  color: #099d8d;
   font-size: 16px;
   background-color: white;
   align-content: center;
@@ -100,17 +125,24 @@ header.claim {
 
 /*footer*/
 
+<<<<<<< HEAD
 .footer-copyright {
+=======
+.nombre-grupo {
+>>>>>>> 11d8feb72612f6c7e015ffd8e0b11d6dc6c62d87
   font-size: 14px;
-  color: cool-grey#b8b8b9;
+  color: #b8b8b9;
   align-content: center;
   font-family: OpenSans;
 }
 .footer-menu {
   font-size: 14px;
-  color: gunmetal #54585a;
+  color: #54585a;
   align-content: center;
   font-family: OpenSans-Semibold;
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 11d8feb72612f6c7e015ffd8e0b11d6dc6c62d87
