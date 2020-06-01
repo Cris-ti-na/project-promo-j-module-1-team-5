@@ -125,24 +125,48 @@
 
 /*footer*/
 
-<<<<<<< HEAD
+.body {
+  padding: 15px;
+}
+
+.footer .wrapper {
+  box-sizing: border-box;
+  display: flex;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer-copyright {
-=======
-.nombre-grupo {
->>>>>>> 11d8feb72612f6c7e015ffd8e0b11d6dc6c62d87
+  margin: 10px;
   font-size: 14px;
   color: #b8b8b9;
-  align-content: center;
-  font-family: OpenSans;
+  font-family: var(--secondary-font);
 }
 .footer-menu {
   font-size: 14px;
   color: #54585a;
-  align-content: center;
-  font-family: OpenSans-Semibold;
+  font-family: var(--other-font);
+  padding: 10px;
 }
-<<<<<<< HEAD
 
+.footer-menu ul {
+  list-style-type: none;
+  margin: 0px;
+  padding-inline-start: 0px;
+  text-align: center;
+  font-weight: bold;
+}
 
-=======
->>>>>>> 11d8feb72612f6c7e015ffd8e0b11d6dc6c62d87
+.footer-link {
+  font-size: 14px;
+  color: #54585a;
+  font-family: var(--other-font);
+  text-decoration:none;
+  line-height: 20px;
+}
+
+.footer-logo {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
