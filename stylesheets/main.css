@@ -110,7 +110,7 @@ html {
 
 .hero-img {
   height: 700px;
-  background-image: url("/images/img-hero.jpg");
+  background-image: url("../images/img-hero.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -183,7 +183,7 @@ html {
   font-size: 16px;
 }
 
-/*QUIÉ  NES SOMOS*/
+/*QUIÉNES SOMOS*/
 
 .section-about-us {
   align-items: center;
@@ -194,7 +194,7 @@ html {
   margin-bottom: 45px;
 }
 
-.section-about-us h1 {
+.section-about-us .aboutus {
   color: var(--primary-color);
   font-family: var(--primary-font);
   font-size: 2.4rem;
@@ -305,6 +305,8 @@ html {
   .skills-boxes {
     width: 48%;
   }
+  /*Quienes somos*/
+  .section-about-us {}
   /* Footer */
   .footer .wrapper {
     flex-direction: row;
