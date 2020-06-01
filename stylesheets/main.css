@@ -251,7 +251,6 @@ html {
 
 /*footer*/
 
-
 .footer .wrapper {
   box-sizing: border-box;
   display: flex;
@@ -286,7 +285,7 @@ html {
   font-size: 14px;
   color: #54585a;
   font-family: var(--other-font);
-  text-decoration:none;
+  text-decoration: none;
   line-height: 20px;
 }
 
@@ -295,8 +294,18 @@ html {
   padding-bottom: 25px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  /* Strengths & Weaknesses */
+  .skills {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
+  .skills-boxes {
+    width: 48%;
+  }
+
+  /* Footer */
   .footer .wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -317,6 +326,5 @@ html {
 
   .footer-logo {
     width: 50vw;
-
   }
 }
