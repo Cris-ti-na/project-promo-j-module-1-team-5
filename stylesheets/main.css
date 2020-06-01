@@ -185,6 +185,12 @@ html {
 
 /*QUIÉNES SOMOS*/
 
+.section-about-us .article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .section-about-us {
   align-items: center;
   text-align: center;
@@ -219,7 +225,7 @@ html {
 .section-about-us p {
   color: var(--darkgrey-color);
   font-size: 1.6rem;
-  font-family: var(--other-font);
+  font-family: var(--secondary-font);
   margin-bottom: 15px;
 }
 
@@ -230,23 +236,20 @@ html {
 }
 
 .section-about-us li {
-  padding: 8px;
   font-size: 24px;
 }
 .section-about-us a {
   color: var(--primary-color);
+  text-align: center;
 }
 
-.section-about-us .rrss li:not(:first-child)::after {
-  background-color: grey;
-  border-radius: 50%;
-  width: 2px;
-  height: 2px;
-  display: block;
-  position: absolute;
-  left: -10px;
-  top: 50%;
-  transform: translateY(-50%);
+/* puntitos entre rrss */
+.rrss li:not(#last-child):after {
+  content: "\00B7";
+  color: var(--dark-color);
+  font-size: 12px;
+  text-decoration: none;
+  padding: 8px;
 }
 
 /*footer*/
@@ -303,6 +306,31 @@ html {
 
   .skills-boxes {
     width: 48%;
+  }
+
+  /* About us */
+  .section-about-us .article {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .section-about-us .article.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    text-align: right;
+  }
+
+  .section-about-us .article .rrss {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .section-about-us .reverse .rrss {
+    display: flex;
+    justify-content: flex-end;
   }
 
   /* Footer */
