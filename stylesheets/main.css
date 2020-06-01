@@ -110,7 +110,7 @@ html {
 
 .hero-img {
   height: 700px;
-  background-image: url("/images/img-hero.jpg");
+  background-image: url("../images/img-hero.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -154,15 +154,26 @@ html {
 /*FORTALEZAS & DEBILIDADES*/
 
 .skills {
-  background-color: rgba(184, 184, 185, 0.2);
+  position: relative;
   /* cool grey #b8b8b9 */
-  /*problem with opacity since it is inherited by all children so text also goes opaque. better to use rgb value WITH opacity factor and forget below
+  /*problem with opacity since it is inherited by all children so text also goes opaque. better to use rgb value WITH opacity factor and forget below or use pseudo selector :before to apply color(with variable) and opacity. This way opacity doesn't affect children of .skills */
   /* background-color: #b8b8b9;
   opacity: 0.2; */
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 0 2% 2% 2%;
+}
+
+.skills:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--lightgray-color);
+  opacity: 0.2;
 }
 
 .skills-title {
