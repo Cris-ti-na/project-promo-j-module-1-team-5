@@ -42,7 +42,6 @@ a {
 
 .wrapper {
   box-sizing: border-box;
-  border: 1px solid red;
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -57,7 +56,6 @@ a {
 } */
 
 /*MENÚ NAVEGACIÓN*/
-
 .header {
   width: 100%;
   position: fixed;
@@ -71,7 +69,6 @@ a {
   padding: 0px;
   margin: 0px;
 }
-
 .wrapper-title {
   width: 100%;
   height: 60px;
@@ -82,19 +79,16 @@ a {
   background-color: var(--primary-color);
   opacity: 0.95;
 }
-
 .header-title {
   font-size: 16px;
   color: var(--light-color);
   text-transform: uppercase;
   z-index: 2;
 }
-
 .wrapper-menu {
   width: 100%;
   height: 45px;
 }
-
 .menu-list {
   padding: 15px;
   margin: 0px;
@@ -104,7 +98,6 @@ a {
   display: flex;
   justify-content: space-between;
 }
-
 .menu-list-link {
   list-style-type: none;
   color: var(--light-color);
@@ -112,16 +105,13 @@ a {
   text-transform: uppercase;
   z-index: 2;
 }
-
 /*HERO*/
-
 .hero-img {
   background: url("../images/img-hero-2.jpg") no-repeat;
   background-size: contain;
   height: 60vh;
   top: 0;
 }
-
 .wrapper-hero-claim {
   background-color: white;
   width: 80%;
@@ -131,7 +121,6 @@ a {
   position: relative;
   transform: translate(0px, -225%);
 }
-
 .hero-claim {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -159,17 +148,27 @@ a {
 }
 
 /*FORTALEZAS & DEBILIDADES*/
-
 .skills {
-  background-color: rgba(184, 184, 185, 0.2);
+  position: relative;
   /* cool grey #b8b8b9 */
-  /*problem with opacity since it is inherited by all children so text also goes opaque. better to use rgb value WITH opacity factor and forget below
+  /*problem with opacity since it is inherited by all children so text also goes opaque. better to use rgb value WITH opacity factor and forget below or use pseudo selector :before to apply color(with variable) and opacity. This way opacity doesn't affect children of .skills */
   /* background-color: #b8b8b9;
   opacity: 0.2; */
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 0 2% 2% 2%;
+}
+
+.skills:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--lightgray-color);
+  opacity: 0.2;
 }
 
 .skills-title {
@@ -181,7 +180,6 @@ a {
   font-size: 22px;
   padding: 2% 0;
 }
-
 .skills-text {
   color: var(--darkgrey-color);
   /* dark grey #54585a */
@@ -350,24 +348,20 @@ a {
   .menu-list-link {
     padding: 20px;
   }
-
-  /* Hero*/ 
-
+  /* Hero*/
   .hero-claim {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
   }
-
- .hero-img {
+  .hero-img {
     background-image: no-repeat;
     background-position: bottom;
     overflow-y: none;
     background-size: cover;
     max-height: 421px;
   }
-
   .wrapper-hero-claim {
     width: 60%;
     margin-left: 50px;
