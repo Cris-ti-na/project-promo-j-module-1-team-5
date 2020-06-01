@@ -59,8 +59,7 @@
 }
 
 .team.text {
-  color: #54585a;
-  font-family: OpenSans;
+  fon<t-family: OpenSans;
   align-content: center;
   font-size: 16px;
   color: #000000;
@@ -85,53 +84,53 @@
   background-color: #b8b8b9;
 }
 
-/*QUIÉNES SOMOS*/
+/*QUIÉ  NES SOMOS*/
 
 .aboutus {
   color: #099d8d;
-  font-family: Rubik-Medium;
+  font-fam ily: Rubik-Medium;
   size: 24px;
-  align-content: center;
+  align-co ntent: center;
   background-color: white;
 }
 
-.aboutus-name {
+.aboutus-nam e {
   color: black;
-  font-size: 20px;
+  font-size: 20p x;
   font-family: OpenSans;
-  background-color: white;
+  background-c olor: white;
   align-content: center;
 }
 
 .aboutus-text {
   color: #54585a;
-  font-size: 16px;
+  font-size: 1 6px;
   font-family: OpenSans;
-  background-color: white;
+  background-col or: white;
   align-content: center;
 }
 
-.aboutus-icon {
+.aboutus -icon {
   color: #099d8d;
-  font-size: 16px;
+  font-siz e: 16px;
   background-color: white;
-  align-content: center;
+  align-co ntent: center;
 }
 
 /*footer*/
 
 /*
-.nombre-grupo {
-  font-size: 14px;
-  color: #b8b8b9;
-  align-content: center;
-  font-family: OpenSans;
-}
-.footer.menu {
-  font-size: 14px;
-  color: #54585a;
-  align-content: center;
-  font-family: OpenSans-Semibold;
-}
-
-*/
+.nombre-grupo {  
+    font-size: 14px;
+  color: #b8b8  b9;
+    align-content: center;
+  font-family:   OpenSans;
+  }
+.footer.menu {  
+    font-size: 14px;
+  color: #5458  5a;
+    align-content: center;
+  font-family:   OpenSans-Semibold;
+  }
+  
+  */
