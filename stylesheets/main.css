@@ -74,20 +74,34 @@
 
 /*FORTALEZAS & DEBILIDADES*/
 
-.skills.title {
-  color: #099d8d;
-  font-family: Rubik-Medium;
-  align-content: center;
-  font-size: 22px;
-  background-color: b8b8b9;
+.skills {
+  background-color: rgba(184, 184, 185, 0.2);
+  /* cool grey #b8b8b9 */
+  /*problem with opacity since it is inherited by all children so text also goes opaque. better to use rgb value WITH opacity factor and forget below
+  /* background-color: #b8b8b9;
+  opacity: 0.2; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 2% 2% 2%;
 }
 
-.skills.text {
-  color: #54585a;
-  font-family: OpenSans;
+.skills-title {
+  color: var(--primary-color);
+  /* #blue-green #099d8d */
+  font-family: var(--primary-font);
+  /* Rubik-Medium */
   align-content: center;
+  font-size: 22px;
+  padding: 2% 0;
+}
+
+.skills-text {
+  color: var(--darkgrey-color);
+  /* dark grey #54585a */
+  font-family: var(--secondary-font);
+  /* OpenSans */
   font-size: 16px;
-  background-color: #b8b8b9;
 }
 
 /*QUIÉNES SOMOS*/
