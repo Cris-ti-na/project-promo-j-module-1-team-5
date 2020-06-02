@@ -157,7 +157,7 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 0 2% 2% 2%;
+  padding: 20px 0;
 }
 
 .skills:before {
@@ -423,7 +423,7 @@ a {
     justify-content: flex-end;
     padding-top: 15px;
   }
-  
+
   /* FOOTER */
   .footer .wrapper {
     padding: 20px 45px;
@@ -431,7 +431,7 @@ a {
     justify-content: space-between;
     position: relative;
   }
-  
+
   .footer-copyright {
     margin: 0px;
     text-align: left;
@@ -446,23 +446,22 @@ a {
   .footer-menu ul {
     text-align: right;
   }
-  
+
   .footer-logo {
     position: absolute;
     transform: translate(0px, 10px);
     padding: 0px;
   }
-  
 }
 @media all and (min-width: 1200px) {
-   /* FOOTER */
-   .footer .wrapper {
+  /* FOOTER */
+  .footer .wrapper {
     padding: 30px 138px;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
   }
-  
+
   .footer-copyright {
     margin: 0px;
     text-align: left;
@@ -477,7 +476,7 @@ a {
   .footer-menu ul {
     text-align: right;
   }
-  
+
   .footer-logo {
     position: absolute;
     transform: translate(0px, 20px);
