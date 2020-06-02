@@ -148,6 +148,17 @@ a {
 }
 
 /*FORTALEZAS & DEBILIDADES*/
+
+/*This is a suggestion of how to do the white square at the top of Skills. If Marina approves, we can take the code out of comments here. If she prefers to do it, she will put the square in her section.*/
+.square {
+  height: 30px;
+  width: 30px;
+  background-color: var(--light-color);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -115%) rotate(45deg);
+}
+
 .skills {
   position: relative;
   /* cool grey #b8b8b9 */
@@ -161,6 +172,7 @@ a {
 }
 
 .skills:before {
+  /*this inserts a background color block with opacity that won't affect text*/
   content: "";
   position: absolute;
   top: 0;
@@ -186,6 +198,7 @@ a {
   font-family: var(--secondary-font);
   /* OpenSans */
   font-size: 16px;
+  margin: 0 0 15px 0;
 }
 
 /*QUIÉNES SOMOS*/
