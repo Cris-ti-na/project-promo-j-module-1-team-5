@@ -32,7 +32,7 @@ html {
 
 body {
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   /*max-width: 320px;  quitar esto cuando metamos las mediaqueris */
 }
 
@@ -159,16 +159,39 @@ a {
 
 /*FORTALEZAS & DEBILIDADES*/
 
+/*This is a suggestion of how to do the white square at the top of Skills. If Marina approves, we can take the code out of comments here. If she prefers to do it, she will put the square in her section.*/
+
+.square {
+  height: 30px;
+  width: 30px;
+  background-color: var(--light-color);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -115%) rotate(45deg);
+}
+
 .skills {
-  background-color: rgba(184, 184, 185, 0.2);
+  position: relative;
   /* cool grey #b8b8b9 */
-  /*problem with opacity since it is inherited by all children so text also goes opaque. better to use rgb value WITH opacity factor and forget below
+  /*problem with opacity since it is inherited by all children so text also goes opaque. better to use rgb value WITH opacity factor and forget below or use pseudo selector :before to apply color(with variable) and opacity. This way opacity doesn't affect children of .skills */
   /* background-color: #b8b8b9;
   opacity: 0.2; */
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 0 2% 2% 2%;
+  padding: 20px 0;
+}
+
+.skills:before {
+  /*this inserts a background color block with opacity that won't affect text*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--lightgray-color);
+  opacity: 0.2;
 }
 
 .skills-title {
@@ -187,6 +210,7 @@ a {
   font-family: var(--secondary-font);
   /* OpenSans */
   font-size: 16px;
+  margin: 0 0 15px 0;
 }
 
 /*QUIÉNES SOMOS*/
@@ -282,6 +306,10 @@ a {
 
 /*footer*/
 
+.footer {
+  border-top: 1px solid var(--lightgray-color);
+}
+
 .footer .wrapper {
   box-sizing: border-box;
   padding: 20px;
@@ -299,7 +327,7 @@ a {
 
 .footer-menu {
   font-size: 14px;
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 .footer-menu ul {
@@ -413,23 +441,55 @@ a {
     justify-content: flex-end;
     padding-top: 15px;
   }
-  /* Footer */
+  /* FOOTER */
   .footer .wrapper {
+    padding: 20px 45px;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
     position: relative;
   }
   .footer-copyright {
-    width: 50vw;
+    margin: 0px;
+    text-align: left;
+    transform: translate(0px, -40px);
   }
-  .footer-menu {
-    padding: 20px;
-    position: absolute;
-    bottom: 70px;
-    right: 0px;
+  .footer-link {
+    line-height: 3rem;
+    text-align: right;
+  }
+  .footer-menu ul {
+    text-align: right;
   }
   .footer-logo {
-    width: 50vw;
+    position: absolute;
+    transform: translate(0px, 10px);
+    padding: 0px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  /* FOOTER */
+  .footer .wrapper {
+    padding: 30px 138px;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+  .footer-copyright {
+    margin: 0px;
+    text-align: left;
+    transform: translate(0px, -30px);
+  }
+  .footer-link {
+    line-height: 3rem;
+    text-align: right;
+  }
+  .footer-menu ul {
+    text-align: right;
+  }
+  .footer-logo {
+    position: absolute;
+    transform: translate(0px, 20px);
+    padding: 0px;
   }
 }
