@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
+html {
+  font-size: 10px;
+}
+
 :root {
   /*COLORS*/
   --primary-color: #099d8d;
@@ -26,16 +30,6 @@
   --secondary-font: "Open Sans", sans-serif;
 }
 
-html {
-  font-size: 10px;
-}
-
-body {
-  box-sizing: border-box;
-  width: 100%;
-  /*max-width: 320px;  quitar esto cuando metamos las mediaqueris */
-}
-
 a {
   font-family: var(--secondary-font);
 }
@@ -44,16 +38,9 @@ a {
   box-sizing: border-box;
   width: 100%;
   max-width: 1200px;
-  margin: auto;
-  padding: 15px;
+  margin: 0;
+  padding: 0 15px;
 }
-
-/* .header-group-name {
-  background-color: blue-green #099d8d;
-  --primary-font: Rubik-Medium;
-  font-size: 16px;
-  --light-color: ffffff; 
-} */
 
 /*MENÚ NAVEGACIÓN*/
 
@@ -145,7 +132,6 @@ a {
   font-family: var(--primary-font);
   text-align: center;
   font-size: 2.4rem;
-  line-height: 45px;
   padding: 15px 0;
 }
 
@@ -224,6 +210,7 @@ a {
 .section-about-us {
   align-items: center;
   text-align: center;
+  color: ;
 }
 
 .section-about-us article {
@@ -237,17 +224,6 @@ a {
   padding: 30px;
   line-height: 45px;
 }
-
-/* 
-.section-about-us .img-profile {
-  box-sizing: content-box;
-  height: 180px;
-  width: 180px;
-  overflow: hidden;
-  border: 5px solid rgba(0, 0, 0, 0.08);
-  border-radius: 4px;
-  margin-bottom: 10px; 
-} */
 
 .section-about-us .container-img {
   box-sizing: content-box;
@@ -279,7 +255,7 @@ a {
   margin-bottom: 15px;
 }
 
-.section-about-us .rrss {
+.section-about-us .social-media {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -296,7 +272,7 @@ a {
 
 /* puntitos entre rrss */
 
-.rrss li:not(#last-child):after {
+.social-media li:not(#last-child):after {
   content: "\00B7";
   color: var(--dark-color);
   font-size: 12px;
@@ -431,12 +407,12 @@ a {
   .section-about-us .article-info {
     padding: 0 15px;
   }
-  .section-about-us .article .rrss {
+  .section-about-us .article .social-media {
     display: flex;
     justify-content: flex-start;
     padding-top: 15px;
   }
-  .section-about-us .reverse .rrss {
+  .section-about-us .reverse .social-media {
     display: flex;
     justify-content: flex-end;
     padding-top: 15px;
@@ -468,6 +444,9 @@ a {
 }
 
 @media all and (min-width: 1200px) {
+  .wrapper {
+    padding: 0 138px;
+  }
   /* FOOTER */
   .footer .wrapper {
     padding: 30px 138px;
