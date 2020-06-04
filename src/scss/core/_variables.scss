@@ -1,6 +1,19 @@
-// fonts
-$font-main: "Roboto", sans-serif;
 
-// colors
-$color-white: #f3f4f5;
-$color-secondary: #999;
+:root {
+    /*COLORS*/
+    --primary-color: #099d8d;
+    /*dark blue-green */
+    --secondary-color: #14d9c4;
+    /*aqua*/
+    --light-color: #ffffff;
+    /* white*/
+    --lightgray-color: #b8b8b9;
+    /*cool-grey*/
+    --darkgrey-color: #54585a;
+    /*dark grey gunmetal*/
+    --dark-color: #000000;
+    /* black */
+    /*FONTS*/
+    --primary-font: "Rubik", sans-serif;
+    --secondary-font: "Open Sans", sans-serif;
+  }
