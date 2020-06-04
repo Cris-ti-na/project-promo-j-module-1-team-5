@@ -118,12 +118,13 @@ a {
 
 /*EQUIPO*/
 
-.team h1 {
+.team h2 {
   color: var(--secondary-color);
   font-family: var(--primary-font);
   text-align: center;
   font-size: 2.4rem;
   padding: 15px 0;
+  text-transform: uppercase;
 }
 
 .team p {
@@ -232,10 +233,22 @@ a {
 }
 
 .section-about-us h2 {
+  color: var(--primary-color);
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+}
+
+.section-about-us h3 {
   color: var(--dark-color);
   font-size: 2rem;
   font-family: var(--secondary-font);
   line-height: 45px;
+  padding-top: 15px;
+  
 }
 
 .section-about-us p {
