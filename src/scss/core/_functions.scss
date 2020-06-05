@@ -1,0 +1,14 @@
+
+@function rem($pixels) {
+    @return ( $pixels / $defaultFontSize * 1rem );
+}
+
+
+/* ejemplo de uso de esta función:
+
+p {
+    font-size: rem(18);
+    margin: 0 rem(10);
+}
+
+*/

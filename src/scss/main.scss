@@ -6,7 +6,10 @@
 @import 'pages/index';*/
 
 @import "core/_reset";
+@import "core/_functions";
+@import "core/_mixins";
 @import "core/_variables";
+
 
 * {
   box-sizing: border-box;
@@ -18,11 +21,11 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: $defaultFontSize;
 }
 
 a {
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
 }
 
 .wrapper {
@@ -56,13 +59,13 @@ a {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   opacity: 0.95;
 }
 
 .header-title {
-  font-size: 16px;
-  color: var(--light-color);
+  font-size: rem(16);
+  color: $light-color;
   text-transform: uppercase;
   z-index: 2;
 }
@@ -76,7 +79,7 @@ a {
   padding: 15px;
   margin: 0px;
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: $secondary-color;
   opacity: 0.9;
   display: flex;
   justify-content: space-between;
@@ -84,8 +87,8 @@ a {
 
 .menu-list-link {
   list-style-type: none;
-  color: var(--light-color);
-  font-size: 16px;
+  color: $light-color;
+  font-size: rem(16);
   text-transform: uppercase;
   z-index: 2;
 }
@@ -110,27 +113,27 @@ a {
 }
 
 .hero-claim {
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   font-weight: 700;
-  font-size: 18px;
+  font-size: rem(18);
   text-align: center;
 }
 
 /*EQUIPO*/
 
 .team h1 {
-  color: var(--secondary-color);
-  font-family: var(--primary-font);
+  color: $secondary-color;
+  font-family: $primary-font;
   text-align: center;
-  font-size: 2.4rem;
+  font-size: rem(24);
   padding: 15px 0;
 }
 
 .team p {
-  color: var(--darkgrey-color);
-  font-family: var(--secondary-font);
+  color: $darkgrey-color;
+  font-family: $secondary-font;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: rem(16);
   padding: 15px 0;
 }
 
@@ -141,7 +144,7 @@ a {
 .square {
   height: 30px;
   width: 30px;
-  background-color: var(--light-color);
+  background-color: $light-color;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -115%) rotate(45deg);
@@ -167,26 +170,26 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: var(--lightgray-color);
+  background-color: $lightgray-color;
   opacity: 0.2;
 }
 
 .skills-title {
-  color: var(--primary-color);
+  color: $primary-color;
   /* #blue-green #099d8d */
-  font-family: var(--primary-font);
+  font-family: $primary-font;
   /* Rubik-Medium */
   align-content: center;
-  font-size: 2.2rem;
+  font-size: rem(22);
   padding: 2% 0;
 }
 
 .skills-text {
-  color: var(--darkgrey-color);
+  color: $darkgrey-color;
   /* dark grey #54585a */
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   /* OpenSans */
-  font-size: 1.6rem;
+  font-size: rem(16);
   margin: 0 0 15px 0;
 }
 
@@ -208,9 +211,9 @@ a {
 }
 
 .section-about-us .aboutus {
-  color: var(--primary-color);
-  font-family: var(--primary-font);
-  font-size: 2.4rem;
+  color: $primary-color;
+  font-family: $primary-font;
+  font-size: rem(24);
   padding: 30px;
   line-height: 45px;
 }
@@ -232,16 +235,16 @@ a {
 }
 
 .section-about-us h2 {
-  color: var(--dark-color);
-  font-size: 2rem;
-  font-family: var(--secondary-font);
+  color: $dark-color;
+  font-size: rem(20);
+  font-family: $secondary-font;
   line-height: 45px;
 }
 
 .section-about-us p {
-  color: var(--darkgrey-color);
-  font-size: 1.6rem;
-  font-family: var(--secondary-font);
+  color: $darkgrey-color;
+  font-size: rem(16);
+  font-family: $secondary-font;
   margin-bottom: 15px;
 }
 
@@ -252,11 +255,11 @@ a {
 }
 
 .section-about-us li {
-  font-size: 24px;
+  font-size: rem(24);
 }
 
 .section-about-us a {
-  color: var(--primary-color);
+  color: $primary-color;
   text-align: center;
 }
 
@@ -264,8 +267,8 @@ a {
 
 .social-media li:not(#last-child):after {
   content: "\00B7";
-  color: var(--dark-color);
-  font-size: 12px;
+  color: $dark-color;
+  font-size: rem(12);
   text-decoration: none;
   padding: 8px;
 }
@@ -273,7 +276,7 @@ a {
 /*footer*/
 
 .footer {
-  border-top: 1px solid var(--lightgray-color);
+  border-top: 1px solid $lightgray-color;
 }
 
 .footer .wrapper {
@@ -286,18 +289,18 @@ a {
 
 .footer-copyright {
   margin: 10px;
-  font-size: 14px;
-  color: var(--lightgray-color);
-  font-family: var(--secondary-font);
+  font-size: rem(14);
+  color: $lightgray-color;
+  font-family: $secondary-font;
 }
 
 .footer-menu {
-  font-size: 14px;
+  font-size: rem(14);
   padding: 10px 0px;
 }
 
 .footer-menu ul {
-  font-family: var(--secondary-font);
+  font-family: $secondary-font;
   font-weight: 700;
   list-style-type: none;
   margin: 0px;
@@ -306,8 +309,8 @@ a {
 }
 
 .footer-link {
-  font-size: 14px;
-  color: var(--darkgrey-color);
+  font-size: rem(14);
+  color: $darkgrey-color;
   opacity: 0.75;
   text-decoration: none;
   line-height: 1.43;
@@ -327,7 +330,7 @@ a {
   .header {
     display: flex;
     flex-direction: row;
-    background-color: var(--primary-color);
+    background-color: $primary-color;
   }
   .wrapper-title {
     width: 30%;
@@ -345,9 +348,9 @@ a {
   }
   /* Hero*/
   .hero-claim {
-    font-family: var(--secondary-font);
+    font-family: $secondary-font;
     font-weight: 700;
-    font-size: 18px;
+    font-size: rem(18);
     text-align: center;
   }
   .hero-img {
