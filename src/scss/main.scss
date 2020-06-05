@@ -121,12 +121,13 @@ a {
 
 /*EQUIPO*/
 
-.team h1 {
+.team h2 {
   color: $secondary-color;
   font-family: $primary-font;
   text-align: center;
   font-size: rem(24);
   padding: 15px 0;
+  text-transform: uppercase;
 }
 
 .team p {
@@ -237,8 +238,18 @@ a {
 .section-about-us h2 {
   color: $dark-color;
   font-size: rem(20);
+  text-transform: uppercase;
+  font-family: $secondary-font;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.section-about-us h3 {
+  color: $dark-color;
+  font-size: rem(20);
   font-family: $secondary-font;
   line-height: 45px;
+  padding-top: 15px;
 }
 
 .section-about-us p {
