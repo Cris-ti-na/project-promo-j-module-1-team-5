@@ -1,14 +1,16 @@
-/*
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'pages/index';*/
-
+/* COMPONENTS */
+/*@import 'components/links';*/
+/* CORE */
 @import "core/_reset";
 @import "core/_functions";
 @import "core/_mixins";
 @import "core/_variables";
+/* LAYOUT */
+/*@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';*/
+/* PAGES */
+/*@import 'pages/index';*/
 
 
 * {
@@ -207,11 +209,11 @@ a {
   text-align: center;
 }
 
-.section-about-us article {
+.section-about-us .article {
   margin-bottom: 45px;
 }
 
-.section-about-us .aboutus {
+.section-about-us .about-us {
   color: $primary-color;
   font-family: $primary-font;
   font-size: rem(24);
