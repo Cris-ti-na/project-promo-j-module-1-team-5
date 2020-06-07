@@ -7,8 +7,8 @@
 @import "core/_variables";
 /* LAYOUT */
 /*@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';*/
+@import 'layout/header';*/
+@import 'layout/footer';
 /* PAGES */
 /*@import 'pages/index';*/
 
@@ -286,54 +286,6 @@ a {
   padding: 8px;
 }
 
-/*footer*/
-
-.footer {
-  border-top: 1px solid $lightgray-color;
-}
-
-.footer .wrapper {
-  box-sizing: border-box;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer-copyright {
-  margin: 10px;
-  font-size: rem(14);
-  color: $lightgray-color;
-  font-family: $secondary-font;
-}
-
-.footer-menu {
-  font-size: rem(14);
-  padding: 10px 0px;
-}
-
-.footer-menu ul {
-  font-family: $secondary-font;
-  font-weight: 700;
-  list-style-type: none;
-  margin: 0px;
-  padding-inline-start: 0px;
-  text-align: center;
-}
-
-.footer-link {
-  font-size: rem(14);
-  color: $darkgrey-color;
-  opacity: 0.75;
-  text-decoration: none;
-  line-height: 1.43;
-}
-
-.footer-logo {
-  padding-top: 20px;
-  padding-bottom: 25px;
-}
-
 @media all and (min-width: 768px) and (max-width: 1200px) {
   /* Body */
   .wrapper {
@@ -423,58 +375,10 @@ a {
     justify-content: flex-end;
     padding-top: 15px;
   }
-  /* FOOTER */
-  .footer .wrapper {
-    padding: 20px 45px;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-  }
-  .footer-copyright {
-    margin: 0px;
-    text-align: left;
-    transform: translate(0px, -40px);
-  }
-  .footer-link {
-    line-height: 3rem;
-    text-align: right;
-  }
-  .footer-menu ul {
-    text-align: right;
-  }
-  .footer-logo {
-    position: absolute;
-    transform: translate(0px, 10px);
-    padding: 0px;
+  @media all and (min-width: 1200px) {
+    .wrapper {
+      padding: 0 138px;
+    }
   }
 }
 
-@media all and (min-width: 1200px) {
-  .wrapper {
-    padding: 0 138px;
-  }
-  /* FOOTER */
-  .footer .wrapper {
-    padding: 30px 138px;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-  }
-  .footer-copyright {
-    margin: 0px;
-    text-align: left;
-    transform: translate(0px, -30px);
-  }
-  .footer-link {
-    line-height: 3rem;
-    text-align: right;
-  }
-  .footer-menu ul {
-    text-align: right;
-  }
-  .footer-logo {
-    position: absolute;
-    transform: translate(0px, 20px);
-    padding: 0px;
-  }
-}
