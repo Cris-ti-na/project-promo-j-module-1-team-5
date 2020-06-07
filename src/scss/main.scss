@@ -8,10 +8,11 @@
 /* LAYOUT */
 /*@import 'layout/page';
 @import 'layout/header';*/
-@import 'layout/footer';
+@import "layout/skills";
+@import "layout/aboutus";
+@import "layout/footer";
 /* PAGES */
 /*@import 'pages/index';*/
-
 
 * {
   box-sizing: border-box;
@@ -140,151 +141,7 @@ a {
   padding: 15px 0;
 }
 
-/*FORTALEZAS & DEBILIDADES*/
-
-/*This is a suggestion of how to do the white square at the top of Skills. If Marina approves, we can take the code out of comments here. If she prefers to do it, she will put the square in her section.*/
-
-.square {
-  height: 30px;
-  width: 30px;
-  background-color: $light-color;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -115%) rotate(45deg);
-}
-
-.skills {
-  position: relative;
-  /* cool grey #b8b8b9 */
-  /*problem with opacity since it is inherited by all children so text also goes opaque. better to use rgb value WITH opacity factor and forget below or use pseudo selector :before to apply color(with variable) and opacity. This way opacity doesn't affect children of .skills */
-  /* background-color: #b8b8b9;
-    opacity: 0.2; */
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.skills:before {
-  /*this inserts a background color block with opacity that won't affect text*/
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: $lightgray-color;
-  opacity: 0.2;
-}
-
-.skills-title {
-  color: $primary-color;
-  /* #blue-green #099d8d */
-  font-family: $primary-font;
-  /* Rubik-Medium */
-  align-content: center;
-  font-size: rem(22);
-  padding: 2% 0;
-}
-
-.skills-text {
-  color: $darkgrey-color;
-  /* dark grey #54585a */
-  font-family: $secondary-font;
-  /* OpenSans */
-  font-size: rem(16);
-  margin: 0 0 15px 0;
-}
-
 /*QUIÉNES SOMOS*/
-
-.section-about-us .article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.section-about-us {
-  align-items: center;
-  text-align: center;
-}
-
-.section-about-us .article {
-  margin-bottom: 45px;
-}
-
-.section-about-us .about-us {
-  color: $primary-color;
-  font-family: $primary-font;
-  font-size: rem(24);
-  padding: 30px;
-  line-height: 45px;
-}
-
-.section-about-us .container-img {
-  box-sizing: content-box;
-  height: 180px;
-  width: 180px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 5px solid rgba(0, 0, 0, 0.08);
-  border-radius: 4px;
-}
-
-.section-about-us .img-profile {
-  width: 100%;
-  height: 100%;
-}
-
-.section-about-us h2 {
-  color: $dark-color;
-  font-size: rem(20);
-  text-transform: uppercase;
-  font-family: $secondary-font;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-
-.section-about-us h3 {
-  color: $dark-color;
-  font-size: rem(20);
-  font-family: $secondary-font;
-  line-height: 45px;
-  padding-top: 15px;
-}
-
-.section-about-us p {
-  color: $darkgrey-color;
-  font-size: rem(16);
-  font-family: $secondary-font;
-  margin-bottom: 15px;
-}
-
-.section-about-us .social-media {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.section-about-us li {
-  font-size: rem(24);
-}
-
-.section-about-us a {
-  color: $primary-color;
-  text-align: center;
-}
-
-/* puntitos entre rrss */
-
-.social-media li:not(#last-child):after {
-  content: "\00B7";
-  color: $dark-color;
-  font-size: rem(12);
-  text-decoration: none;
-  padding: 8px;
-}
 
 @media all and (min-width: 768px) and (max-width: 1200px) {
   /* Body */
@@ -331,54 +188,4 @@ a {
     padding: 15px;
     margin-top: 10%;
   }
-  /* Strengths & Weaknesses */
-  .skills {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .skills-boxes {
-    width: 48%;
-  }
-  /* About us */
-  .section-about-us .article {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    text-align: left;
-    padding: 0 45px;
-  }
-  .section-about-us .article.reverse {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    text-align: right;
-    padding: 0 45px;
-  }
-  .section-about-us .container-img {
-    box-sizing: content-box;
-    height: 205px;
-    width: 205px;
-    min-width: 205px;
-    border: 5px solid rgba(0, 0, 0, 0.08);
-    border-radius: 4px;
-  }
-  .section-about-us .article-info {
-    padding: 0 15px;
-  }
-  .section-about-us .article .social-media {
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 15px;
-  }
-  .section-about-us .reverse .social-media {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 15px;
-  }
-  @media all and (min-width: 1200px) {
-    .wrapper {
-      padding: 0 138px;
-    }
-  }
 }
-
