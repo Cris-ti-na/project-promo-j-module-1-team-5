@@ -1,8 +1,96 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+/*footer*/
+
+.footer {
+  border-top: 1px solid $lightgray-color;
+  font-family: $secondary-font;
+  font-size: rem(14);
+  & .wrapper {
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    @include tablet() {
+      padding: 30px 45px 60px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+      position: relative;
+    }
+    @include desktop() {
+      padding: 30px 138px 50px;
+      flex-direction: row;
+      justify-content: space-between;
+      position: relative;
+    }
+  }
+  &__copyright {
+    margin-bottom: 10px;
+    color: $lightgray-color;
+    @include tablet() {
+    margin: 0px;
+    text-align: left;
+    }
+    @include desktop() {
+      transform: translate(0, -30px);
+      margin: 0px;
+      text-align: left;
+    }
+  }
+  &__menu {
+    margin: 0;
+    padding: 10px 0 10px;
+    text-align: center;
+    @include tablet() {
+      text-align: right;
+      padding: 0;
+    }
+    @include desktop() {
+      text-align: right;
+      padding: 0;
+    }
+    & ul {
+      display: block;
+      font-weight: 700;
+      list-style-type: none;
+      margin: 0px;
+      padding-inline-start: 0px;
+      & li {
+        padding: 0 0 5px;
+        @include tablet() {
+          padding: 0 0 10px 0;;
+        }
+        @include desktop() {
+          padding: 0 0 10px;;
+        }
+      }
+    }
+    &--link {
+      color: $darkgrey-color;
+      opacity: 0.75;
+      text-decoration: none;
+      @include tablet() {
+      text-align: right;
+      }
+      @include desktop() {
+
+        text-align: right;
+      }
+    }
+  }
+  &__logo {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    @include tablet() {
+      position: absolute;
+      transform: translate(0px, 30px);
+      padding: 0px;
+    }
+    @include desktop() {
+      position: absolute;
+      transform: translate(0px, 20px);
+      padding: 0px;
+    }
+  }
 }
