@@ -8,11 +8,11 @@
 /* LAYOUT */
 /*@import 'layout/page';
 @import 'layout/header';*/
-@import 'layout/aboutus';
-@import 'layout/footer';
+@import "layout/skills";
+@import "layout/aboutus";
+@import "layout/footer";
 /* PAGES */
 /*@import 'pages/index';*/
-
 
 * {
   box-sizing: border-box;
@@ -141,84 +141,7 @@ a {
   padding: 15px 0;
 }
 
-/*FORTALEZAS & DEBILIDADES*/
-
- /* Strengths & Weaknesses tablet */
- /*.skills {
-  flex-direction: row;
-  justify-content: space-between;
-}
-.skillsboxes {
-  width: 48%;
-}*/
-
-.skills {
-  position: relative;
-  text-align: center;
-  padding: 30px 0;
-
-  & .wrapper {
-    display: flex;
-    flex-direction: column;
-    @include tablet {
-      flex-direction: row;
-    }
-  }
-
-  &:before {
-    /*this inserts a background color block with opacity that won't affect text*/
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: $lightgray-color;
-    opacity: 0.2;
-  }
-  
-  /*This is a suggestion of how to do the white square at the top of Skills. If Marina approves, we can take the code out of comments here. If she prefers to do it, she will put the square in her section.*/
-  &__square {
-    height: 30px;
-    width: 30px;
-    background-color: $light-color;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -150%) rotate(45deg);
-  }
-
-  & h3 {
-    color: $primary-color;
-    /* #blue-green #099d8d */
-    font-family: $primary-font;
-    /* Rubik-Medium */
-    align-content: center;
-    font-size: rem(22);
-    padding: 10px 0;
-  }
-
-  & p {
-    color: $darkgrey-color;
-    /* dark grey #54585a */
-    font-family: $secondary-font;
-    /* OpenSans */
-    font-size: rem(16);
-    padding:0 0 15px 0;
-  }
-
-  &__weaknesses {
-    padding: 30px 0 0 0;
-  }
-
-  &__strengths, &__weaknesses {
-    @include tablet {
-      width: 50%;
-    }
-  }
-}
-
 /*QUIÉNES SOMOS*/
-
 
 @media all and (min-width: 768px) and (max-width: 1200px) {
   /* Body */
@@ -265,6 +188,4 @@ a {
     padding: 15px;
     margin-top: 10%;
   }
- 
-  }
-
+}
