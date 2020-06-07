@@ -1,24 +1,25 @@
-/*FORTALEZAS & DEBILIDADES*/
-
-/* Strengths & Weaknesses tablet */
-/*.skills {
-  flex-direction: row;
-  justify-content: space-between;
-}
-.skillsboxes {
-  width: 48%;
-}*/
-
 .skills {
   position: relative;
   text-align: center;
   padding: 30px 0;
+  @include tablet {
+    padding: 45px 0 60px;
+  }
+  @include desktop {
+    padding: 45px 0 60px;
+  }
 
   & .wrapper {
     display: flex;
     flex-direction: column;
     @include tablet {
       flex-direction: row;
+      padding: 0 45px;
+    }
+
+    @include desktop {
+      flex-direction: row;
+      padding: 0 45px;
     }
   }
 
@@ -42,6 +43,12 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -150%) rotate(45deg);
+    @include tablet {
+      transform: translate(-50%, -200%) rotate(45deg);
+    }
+    @include desktop {
+      transform: translate(-50%, -200%) rotate(45deg);
+    }
   }
 
   & h3 {
@@ -52,6 +59,12 @@
     align-content: center;
     font-size: rem(22);
     padding: 10px 0;
+    @include tablet {
+      padding: 0 0 15px;
+    }
+    @include desktop {
+      padding: 0 0 15px;
+    }
   }
 
   & p {
@@ -61,15 +74,34 @@
     /* OpenSans */
     font-size: rem(16);
     padding: 0 0 15px 0;
+    @include tablet {
+      padding: 0;
+    }
+    @include desktop {
+      padding: 0;
+    }
+  }
+
+  &__strengths {
+    @include tablet {
+      padding: 0 15px 0 0;
+      width: 50%;
+    }
+    @include desktop {
+      padding: 0 22px 0 0;
+      width: 50%;
+    }
   }
 
   &__weaknesses {
     padding: 30px 0 0 0;
-  }
 
-  &__strengths,
-  &__weaknesses {
     @include tablet {
+      padding: 0 0 0 15px;
+      width: 50%;
+    }
+    @include desktop {
+      padding: 0 0 0 22px;
       width: 50%;
     }
   }
