@@ -1,5 +1,55 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
-}
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .wrapper-title {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: $primary-color;
+    opacity: 0.95;
+  }
+  
+  .header-title {
+    font-size: rem(16);
+    color: $light-color;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+  
+  .wrapper-menu {
+    width: 100%;
+    height: 45px;
+  }
+  
+  .menu-list {
+    padding: 15px;
+    margin: 0px;
+    align-items: center;
+    background-color: $secondary-color;
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menu-list-link {
+    list-style-type: none;
+    color: $light-color;
+    font-size: rem(16);
+    text-transform: uppercase;
+    z-index: 2;
+  }
+  

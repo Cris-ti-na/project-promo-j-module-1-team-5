@@ -1,18 +1,20 @@
-/* COMPONENTS */
-/*@import 'components/links';*/
+
 /* CORE */
 @import "core/_reset";
 @import "core/_functions";
 @import "core/_mixins";
 @import "core/_variables";
+
 /* LAYOUT */
-/*@import 'layout/page';
-@import 'layout/header';*/
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/team';
 @import "layout/skills";
 @import "layout/aboutus";
 @import "layout/footer";
 /* PAGES */
-/*@import 'pages/index';*/
+@import 'pages/index';
+@import 'pages/contact';
 
 * {
   box-sizing: border-box;
@@ -39,153 +41,3 @@ a {
   padding: 0 15px;
 }
 
-/*MENÚ NAVEGACIÓN*/
-
-.header {
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0px;
-  margin: 0px;
-}
-
-.wrapper-title {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background-color: $primary-color;
-  opacity: 0.95;
-}
-
-.header-title {
-  font-size: rem(16);
-  color: $light-color;
-  text-transform: uppercase;
-  z-index: 2;
-}
-
-.wrapper-menu {
-  width: 100%;
-  height: 45px;
-}
-
-.menu-list {
-  padding: 15px;
-  margin: 0px;
-  align-items: center;
-  background-color: $secondary-color;
-  opacity: 0.9;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu-list-link {
-  list-style-type: none;
-  color: $light-color;
-  font-size: rem(16);
-  text-transform: uppercase;
-  z-index: 2;
-}
-
-/*HERO*/
-
-.hero-img {
-  background: url("../images/img-hero-2.jpg") no-repeat;
-  background-size: contain;
-  height: 60vh;
-  top: 0;
-}
-
-.wrapper-hero-claim {
-  background-color: white;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 15px;
-  position: relative;
-  transform: translate(0px, -225%);
-}
-
-.hero-claim {
-  font-family: $secondary-font;
-  font-weight: 700;
-  font-size: rem(18);
-  text-align: center;
-}
-
-/*EQUIPO*/
-
-.team h2 {
-  color: $secondary-color;
-  font-family: $primary-font;
-  text-align: center;
-  font-size: rem(24);
-  padding: 15px 0;
-  text-transform: uppercase;
-}
-
-.team p {
-  color: $darkgrey-color;
-  font-family: $secondary-font;
-  text-align: center;
-  font-size: rem(16);
-  padding: 15px 0;
-}
-
-/*QUIÉNES SOMOS*/
-
-@media all and (min-width: 768px) and (max-width: 1200px) {
-  /* Body */
-  .wrapper {
-    padding: 0 45px;
-  }
-  /* Header */
-  .header {
-    display: flex;
-    flex-direction: row;
-    background-color: $primary-color;
-  }
-  .wrapper-title {
-    width: 30%;
-    background-color: inherit;
-  }
-  .wrapper-menu {
-    width: 70%;
-  }
-  .menu-list {
-    justify-content: flex-end;
-    background-color: inherit;
-  }
-  .menu-list-link {
-    padding: 20px;
-  }
-  /* Hero*/
-  .hero-claim {
-    font-family: $secondary-font;
-    font-weight: 700;
-    font-size: rem(18);
-    text-align: center;
-  }
-  .hero-img {
-    background-image: no-repeat;
-    background-position: bottom;
-    overflow-y: none;
-    background-size: cover;
-    max-height: 421px;
-  }
-  .wrapper-hero-claim {
-    width: 60%;
-    margin-left: 50px;
-    padding: 15px;
-    margin-top: 10%;
-  }
-}

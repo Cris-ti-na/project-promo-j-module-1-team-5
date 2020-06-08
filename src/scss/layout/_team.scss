@@ -1,0 +1,16 @@
+.team h2 {
+    color: $secondary-color;
+    font-family: $primary-font;
+    text-align: center;
+    font-size: rem(24);
+    padding: 15px 0;
+    text-transform: uppercase;
+  }
+  
+  .team p {
+    color: $darkgrey-color;
+    font-family: $secondary-font;
+    text-align: center;
+    font-size: rem(16);
+    padding: 15px 0;
+  }

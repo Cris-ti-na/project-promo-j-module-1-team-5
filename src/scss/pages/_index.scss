@@ -1,3 +1,51 @@
-.main__list {
-  padding-left: 2rem;
+/*INCLUIMOS TODO EL CSS DEL INDEX.HTML*/
+
+
+/*MEDIAQUERIS MEZCLADAS, PENDIENTE ORGANIZAR EN LOS PARTIALS*/
+
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  /* Body */
+  .wrapper {
+    padding: 0 45px;
+  }
+  /* Header */
+  .header {
+    display: flex;
+    flex-direction: row;
+    background-color: $primary-color;
+  }
+  .wrapper-title {
+    width: 30%;
+    background-color: inherit;
+  }
+  .wrapper-menu {
+    width: 70%;
+  }
+  .menu-list {
+    justify-content: flex-end;
+    background-color: inherit;
+  }
+  .menu-list-link {
+    padding: 20px;
+  }
+  /* Hero*/
+  .hero-claim {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: rem(18);
+    text-align: center;
+  }
+  .hero-img {
+    background-image: no-repeat;
+    background-position: bottom;
+    overflow-y: none;
+    background-size: cover;
+    max-height: 421px;
+  }
+  .wrapper-hero-claim {
+    width: 60%;
+    margin-left: 50px;
+    padding: 15px;
+    margin-top: 10%;
+  }
 }
