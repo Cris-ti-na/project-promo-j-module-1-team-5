@@ -1,0 +1,108 @@
+.skills {
+  position: relative;
+  text-align: center;
+  padding: 30px 0;
+  @include tablet {
+    padding: 45px 0 60px;
+  }
+  @include desktop {
+    padding: 45px 0 60px;
+  }
+
+  & .wrapper {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+      padding: 0 45px;
+    }
+
+    @include desktop {
+      flex-direction: row;
+      padding: 0 45px;
+    }
+  }
+
+  &:before {
+    /*this inserts a background color block with opacity that won't affect text*/
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $lightgray-color;
+    opacity: 0.2;
+  }
+
+  /*This is a suggestion of how to do the white square at the top of Skills. If Marina approves, we can take the code out of comments here. If she prefers to do it, she will put the square in her section.*/
+  &__square {
+    height: 30px;
+    width: 30px;
+    background-color: $light-color;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -150%) rotate(45deg);
+    @include tablet {
+      transform: translate(-50%, -200%) rotate(45deg);
+    }
+    @include desktop {
+      transform: translate(-50%, -200%) rotate(45deg);
+    }
+  }
+
+  & h3 {
+    color: $primary-color;
+    /* #blue-green #099d8d */
+    font-family: $primary-font;
+    /* Rubik-Medium */
+    align-content: center;
+    font-size: rem(22);
+    padding: 10px 0;
+    @include tablet {
+      padding: 0 0 15px;
+    }
+    @include desktop {
+      padding: 0 0 15px;
+    }
+  }
+
+  & p {
+    color: $darkgrey-color;
+    /* dark grey #54585a */
+    font-family: $secondary-font;
+    /* OpenSans */
+    font-size: rem(16);
+    padding: 0 0 15px 0;
+    @include tablet {
+      padding: 0;
+    }
+    @include desktop {
+      padding: 0;
+    }
+  }
+
+  &__strengths {
+    @include tablet {
+      padding: 0 15px 0 0;
+      width: 50%;
+    }
+    @include desktop {
+      padding: 0 22px 0 0;
+      width: 50%;
+    }
+  }
+
+  &__weaknesses {
+    padding: 30px 0 0 0;
+
+    @include tablet {
+      padding: 0 0 0 15px;
+      width: 50%;
+    }
+    @include desktop {
+      padding: 0 0 0 22px;
+      width: 50%;
+    }
+  }
+}
