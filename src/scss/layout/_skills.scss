@@ -2,6 +2,7 @@
   position: relative;
   text-align: center;
   padding: 30px 0;
+  background-color: transparentize($lightgray-color, 0.7);
   @include tablet {
     padding: 45px 0 60px;
   }
@@ -22,20 +23,6 @@
       padding: 0 45px;
     }
   }
-
-  &:before {
-    /*this inserts a background color block with opacity that won't affect text*/
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: $lightgray-color;
-    opacity: 0.2;
-  }
-
-  /*This is a suggestion of how to do the white square at the top of Skills. If Marina approves, we can take the code out of comments here. If she prefers to do it, she will put the square in her section.*/
   &__square {
     height: 30px;
     width: 30px;
