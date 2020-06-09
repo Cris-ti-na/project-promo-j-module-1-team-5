@@ -1,1 +1,41 @@
-/* INCLUIMOS EL CSS DIFERENTE DE CONTACT*/
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: block;
+}
+
+.form label,
+.form input {
+  width: 100%;
+}
+
+.form__textarea {
+  width: 100%;
+}
+
+.form__button {
+  color: white;
+  background-color: #099d8d;
+  border-radius: 5px;
+  box-shadow: none;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 768px) {
+  .email-tel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form__email {
+    min-width: 70%;
+    padding-right: 20px;
+  }
+  .form__button {
+    right: 0;
+    padding: 12px 74px;
+    width: max-content;
+  }
+}

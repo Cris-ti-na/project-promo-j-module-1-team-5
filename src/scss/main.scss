@@ -1,4 +1,3 @@
-
 /* CORE */
 @import "core/_reset";
 @import "core/_functions";
@@ -6,15 +5,16 @@
 @import "core/_variables";
 
 /* LAYOUT */
-@import 'layout/header';
-@import 'layout/hero';
-@import 'layout/team';
+@import "layout/header";
+@import "layout/hero";
+@import "layout/team";
 @import "layout/skills";
 @import "layout/aboutus";
 @import "layout/footer";
+@import "layout/form";
 /* PAGES */
-@import 'pages/index';
-@import 'pages/contact';
+@import "pages/index";
+@import "pages/contact";
 
 * {
   box-sizing: border-box;
@@ -40,4 +40,3 @@ a {
   margin: auto;
   padding: 0 15px;
 }
-
