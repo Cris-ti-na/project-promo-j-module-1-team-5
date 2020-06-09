@@ -15,12 +15,10 @@
     flex-direction: column;
     @include tablet {
       flex-direction: row;
-      padding: 0 45px;
     }
 
     @include desktop {
       flex-direction: row;
-      padding: 0 45px;
     }
   }
   &__square {
