@@ -4,66 +4,71 @@
   margin: 0px;
   position: fixed;
   top: 0;
-  background-color: $primary-color;
-  opacity: 0.95;
+  background-color: transparentize($primary-color, 0.2);  
+  color: $light-color;
+  font-weight: 700;
   display: flex;
   flex-direction: column;
-}
+  z-index: 1;
+  @include tablet {
+      flex-direction: row;
+      padding: 0 45px;
+      justify-content: space-between;
+      align-items: center;
+    }
+  @include desktop {
+    padding: 0 138px;
+  }  
 
-.header__container {
-  padding: 0 15px;
-}
-
-.header__title {
-  font-size: rem(16);
-  margin: 0;
-  color: $light-color;
-  text-transform: uppercase;
-}
-
-.header__menu {
-  background-color: $secondary-color;
-}
-
-.header__menu--list {
-  opacity: 0.9;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.header__menu--list li a {
-  color: $light-color;
-  font-size: rem(16);
-  text-transform: uppercase;
-}
-@media all and (min-width: 768px) {
-  .header {
-    flex-direction: row;
-    background-color: $primary-color;
-    padding: 0 45px;
+  &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30 15px;
+      height: 60px;
+      &.menu {
+        display: block;
+        height: 45px;
+        padding: 12px 15px;
+        background-color: transparentize($secondary-color, 0.4);
+        @include tablet {
+          width: 50%;
+          background-color: transparent;          
+        }
+      }
+      @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      @include desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
   }
-  .header__container {
-    display: inline-block;
-    width: 50%;
-  
+  &__title {
+    font-size: rem(16); 
+    color: $light-color;
+    text-transform: uppercase;
+    text-align: center;
   }
-
-  .header__menu {
-    background-color: inherit;
-  }
-
-  .header__menu--list {
-    justify-content: flex-end;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .header__container {
-    max-width: 600px;
-    padding: 30px 138px;
-    display: inline-block;
-    width: 50%;
-    margin: auto;
+  &__menu {
+    &--list {
+      display: flex;
+      justify-content: space-between;
+      @include tablet {
+        
+      }
+      & li a {
+        color: $light-color;
+        font-size: rem(16);
+        text-transform: uppercase;
+      }
+    }
   }
 }
+
+
+
+
