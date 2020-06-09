@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: block;
+}
+
+.form label,
+.form input {
+  width: 100%;
+}
+
+.form__textarea {
+  width: 100%;
+}
+
+.form__button {
+  color: $light-color;
+  background-color: $primary-color;
+  border-radius: 5px;
+  box-shadow: none;
+  text-transform: uppercase;
+}
+
+@media all and (min-width: 768px) {
+  .email-tel {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form__email {
+    min-width: 70%;
+    padding-right: 20px;
+  }
+  .form__button {
+    right: 0;
+    padding: 12px 74px;
+    width: max-content;
+  }
+}
