@@ -23,17 +23,13 @@
     margin-bottom: 45px;
 
     @include tablet {
-      display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      text-align: left;
       padding: 0 45px;
 
       &:nth-child(odd) {
-        display: flex;
         flex-direction: row-reverse;
         justify-content: flex-start;
-        text-align: right;
         padding: 0 45px;
       }
     }
@@ -62,26 +58,34 @@
     &--info {
       @include tablet {
         padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
         justify-content: flex-start;
+        align-content: flex-start;
       }
       &:nth-child(odd) {
-        @include tablet{
-        padding: 0 15px;
-        justify-content: flex-start;
-        }
-      }
-      & ul {
         @include tablet {
-          padding-top: 15px;
-        }
-        &:nth-child(odd) {
-          @include tablet {
-            display: flex;
-            justify-content: flex-start;
-            padding-top: 15px;
-          }
+          padding: 0 15px;
+          text-align: right;
+          flex-direction: column-reverse;
         }
       }
+    }
+  }
+}
+
+.socialmedia {
+  display: flex;
+  flex: row;
+  justify-content: center;
+  border: 1px solid red;
+  padding-top: 15px;
+  font-size: rem(20);
+  @include tablet {
+    justify-content: left;
+    &.socialmedia:nth-of-type(even) {
+      flex: row-reverse;
     }
   }
 }
@@ -91,7 +95,6 @@
   font-size: rem(20);
   font-family: $secondary-font;
   line-height: 45px;
-  padding-top: 15px;
 }
 
 .about-us__article--info p {
@@ -101,24 +104,15 @@
   margin-bottom: 15px;
 }
 
-.socialmedia {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: rem(24);
-}
-
-.socialmedia li {
+.socialmedia a {
   color: $primary-color;
   text-align: center;
 }
 
-.socialmedia li:not(#last-child):after {
+.socialmedia a:not(#last-child):after {
   content: "·";
   color: $primary-color;
   font-size: rem(24);
   font-weight: bolder;
   padding: 10px;
 }
-
