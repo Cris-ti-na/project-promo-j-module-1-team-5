@@ -1,55 +1,57 @@
 .header {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-  }
-  
-  .wrapper-title {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  top: 0;
+  background-color: $primary-color;
+  opacity: 0.95;
+  display: flex;
+  flex-direction: column;
+}
+.header__container {
+  padding: 0 15px;
+}
+
+.header__title {
+  font-size: rem(16);
+  margin: 0;
+  color: $light-color;
+  text-transform: uppercase;
+}
+
+.header__menu {
+  background-color: $secondary-color;
+}
+
+.header__menu--list {
+  opacity: 0.9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__menu--list li a {
+  color: $light-color;
+  font-size: rem(16);
+  text-transform: uppercase;
+}
+@media all and (min-width: 768px) {
+  .header {
+    flex-direction: row;
     background-color: $primary-color;
-    opacity: 0.95;
+    padding: 0 45px;
   }
-  
-  .header-title {
-    font-size: rem(16);
-    color: $light-color;
-    text-transform: uppercase;
-    z-index: 2;
+  .header__container {
+    width: 50%;
+    display: inline-block;
   }
-  
-  .wrapper-menu {
-    width: 100%;
-    height: 45px;
+
+  .header__menu {
+    background-color: inherit;
   }
-  
-  .menu-list {
-    padding: 15px;
-    margin: 0px;
-    align-items: center;
-    background-color: $secondary-color;
-    opacity: 0.9;
-    display: flex;
-    justify-content: space-between;
+
+  .header__menu--list {
+    justify-content: flex-end;
   }
-  
-  .menu-list-link {
-    list-style-type: none;
-    color: $light-color;
-    font-size: rem(16);
-    text-transform: uppercase;
-    z-index: 2;
-  }
-  
+}
