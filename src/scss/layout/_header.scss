@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .header__container {
   padding: 0 15px;
 }
@@ -43,8 +44,9 @@
     padding: 0 45px;
   }
   .header__container {
-    width: 50%;
     display: inline-block;
+    width: 50%;
+  
   }
 
   .header__menu {
@@ -53,5 +55,15 @@
 
   .header__menu--list {
     justify-content: flex-end;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .header__container {
+    max-width: 600px;
+    padding: 30px 138px;
+    display: inline-block;
+    width: 50%;
+    margin: auto;
   }
 }
