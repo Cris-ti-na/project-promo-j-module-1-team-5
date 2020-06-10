@@ -8,230 +8,236 @@
   <script src="https://kit.fontawesome.com/487df2ea51.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./stylesheets/main.css" />
   <title>Queens of Code</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="wrapper-title">
-      <h1 class="header-title">
+    <div class="header__container">
+      <h1 class="header__title">
         <a href="index.html">Queens of Code</a>
       </h1>
     </div>
-    <nav class="header-menu">
-      <ul class="menu-list">
-        <li class="menu-list-link">
-          <a href="index.html#team">Equipo</a>
-        </li>
-        <li class="menu-list-link">
-          <a href="index.html#about-us">Quienes somos</a>
-        </li>
-        <li class="menu-list-link">
-          <a href="index.html#contact">Contacto</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__container menu">
+      <nav class="header__menu">
+        <ul class="header__menu--list">
+          <li>
+            <a href="#team">Equipo</a>
+          </li>
+          <li>
+            <a href="#about-us">Quienes somos</a>
+          </li>
+          <li>
+            <a href="./contact.html">Contactos</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
+
   <main>
-    <section>
-      <div class="hero-img"></div>
-      <div class="hero-claim">
-        <p>
-          Code save the Queens.
-        </p>
+    <section class="hero">
+      <div class="hero-img">
+        <img src="./assets/images/hero-test-3.jpg" width="100%" />
+      </div>
+      <div class="wrapper">
+        <div class="hero-claim">
+          <span>
+            Code save the Queens.
+          </span>
+        </div>
       </div>
     </section>
+
     <section class="team" id="team">
       <div class="wrapper">
-        <h1>EQUIPO</h1>
+        <h2>equipo</h2>
         <p>
-          Aunque venimos de casas reales y de experiencias en los reinados del
-          mundo laboral muy distintas, la pasión por la tecnología y la
-          determinación por dar un vuelco a nuestras vidas nos han unido con un
-          mismo objetivo: ser las reinas de la programación
+          Aunque venimos de casas reales y de experiencias en los reinados del mundo
+          laboral muy distintas, la pasión por la tecnología y la determinación por
+          dar un vuelco a nuestras vidas nos han unido con un mismo objetivo: ser
+          las reinas de la programación
         </p>
       </div>
     </section>
+
     <!--Skills Section-->
     <section class="skills">
-      <div class="square"></div>
+      <div class="skills__square"></div>
       <div class="wrapper">
-        <div class="skills-strengths">
-          <h3 class="skills-title">
+        <div class="skills__strengths">
+          <h3>
             Fortalezas
           </h3>
-          <p class="skills-text">
-            La tenacidad, la versatilidad y la inquietud por el mundo que nos
-            rodea podrían ser tres características que nos definen muy bien.
-            Si nos conoces, verás que puedes hablar con nosotras de cine, de
-            viajes o de cómo cambiarle el color al class dentro de una lista y
-            sobre todo, que siempre tenemos ganas de aprender algo nuevo.
-            ¡Dicen de nosotras que somos camaleónicas!
+          <p>
+            La tenacidad, la versatilidad y la inquietud por el mundo que nos rodea
+            podrían ser tres características que nos definen muy bien. Si nos
+            conoces, verás que puedes hablar con nosotras de cine, de viajes o de
+            cómo cambiarle el color al class dentro de una lista y sobre todo, que
+            siempre tenemos ganas de aprender algo nuevo. ¡Dicen de nosotras que
+            somos camaleónicas!
           </p>
         </div>
-        <div class="skills-weaknesses">
-          <h3 class="skills-title">
+        <div class="skills__weaknesses">
+          <h3>
             Debilidades
           </h3>
-          <p class="skills-text">
-            Aunque seamos reinas, somos conscientes de que tenemos alguna que
-            otra debilidad… pero, sinceramente, eso nos hace más fuertes. Solo
-            tenéis que decirnos en qué creeis que podemos mejorar y nosotras
-            lo haremos. ¡No lo dudes!
+          <p>
+            Aunque seamos reinas, somos conscientes de que tenemos alguna que otra
+            debilidad… pero, sinceramente, eso nos hace más fuertes. Solo tenéis que
+            decirnos en qué creeis que podemos mejorar y nosotras lo haremos. ¡No lo
+            dudes!
           </p>
         </div>
       </div>
     </section>
-    <section class="section-about-us" id="about-us">
-      <div class="wrapper">
-        <h1>QUIENES SOMOS</h1>
-        <article class="article">
-          <div class="container-img">
-            <img src="./assets/images/img-profile-marina.jpg" alt="Marina" class="img-profile" />
-          </div>
-          <div class="article-info">
-            <h2>Marina Carbonell</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, cum? Eum accusamus inventore quasi sunt
-              quibusdam modi maxime similique laboriosam mollitia deserunt asperiores in totam, quam necessitatibus,
-              blanditiis deleniti temporibus.</p>
-            <ul class="social-media">
-              <li>
-                <a href="https://twitter.com/DiariodeunaN?s=09">
-                  <i class="fab fa-twitter" alt="Twitter"></i></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/marina-carbonell-%C3%A1lvarez-48903950/"><i
-                    class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li>
-                <a href="https://github.com/MarinaCarbonell"><i class="fab fa-github-alt"></i></a>
-              </li>
-              <li id="last-child">
-                <a href=""><i class="fas fa-envelope"></i></a>
-              </li>
-            </ul>
-          </div>
-        </article>
-        <article class="article reverse">
-          <div class="container-img">
-            <img src="./assets/images/img-profile-claudia.jpg" alt="Claudia" class="img-profile" />
-          </div>
-          <div class="article-info">
-            <h2>Claudia Santaella</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, a. Provident quis, temporibus
-              quia ducimus commodi quibusdam unde sit corrupti consequatur optio tempora quaerat iure voluptatibus,
-              velit aliquid nobis natus?</p>
-            <ul class="social-media">
-              <li>
-                <a href="https://twitter.com/__Santaella"><i class="fab fa-twitter" alt="Twitter"></i></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/claudia-santaella-61526a115/"><i
-                    class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li>
-                <a href="https://github.com/claudiasanes"><i class="fab fa-github-alt"></i></i></a>
-              </li>
-              <li id="last-child">
-                <a href="mailto: claudiasanes@gmail.com"><i class="fas fa-envelope"></i></a>
-              </li>
-            </ul>
-          </div>
-        </article>
-        <article class="article">
-          <div class="container-img">
-            <img src="./assets/images/img-profile-cristina.jpg" alt="Cristina" class="img-profile" />
-          </div>
-          <div class="article-info">
-            <h2>Cristina Carrascal</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit architecto libero nulla fuga, veniam,
-              molestias magni aut ab omnis voluptate molestiae officiis asperiores expedita? Architecto quo voluptatibus
-              maxime distinctio deleniti.</p>
-            <ul class="social-media">
-              <li>
-                <a href=""><i class="fab fa-twitter" alt="Twitter"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li>
-                <a href="https://github.com/Cris-ti-na"><i class="fab fa-github-alt"></i></i></a>
-              </li>
-              <li id="last-child">
-                <a href=""><i class="fas fa-envelope"></i></a>
-              </li>
-            </ul>
-          </div>
-        </article>
-        <article class="article reverse">
-          <div class="container-img">
-            <img src="./assets/images/img-profile-kayla.jpg" alt="Kayla" class="img-profile" />
-          </div>
-          <div class="article-info">
-            <h2>Kayla Jean Crane</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo incidunt hic quas nobis harum
-              veritatis adipisci culpa nostrum! Eaque nesciunt quibusdam minima deleniti perferendis praesentium
-              similique dicta voluptatem optio et. </p>
 
-            <ul class="social-media">
-              <li>
-                <a href="https://twitter.com/KaylaJCrane"><i class="fab fa-twitter" alt="Twitter"></i></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/kaylacrane/"><i class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li>
-                <a href="https://github.com/kaylacrane"><i class="fab fa-github-alt"></i></a>
-              </li>
-              <li id="last-child">
-                <a href="mailto: kayla.crane@gmail.com"><i class="fas fa-envelope"></i></a>
-              </li>
-            </ul>
+    <section class="about-us" id="about-us">
+      <div class="wrapper">
+        <h2>quiénes somos</h2>
+
+        <article class="about-us__article">
+          <div class="about-us__article--container">
+            <img src="./assets/images/img-profile-marina.jpg" alt="Marina" />
+          </div>
+          <div class="about-us__article--info">
+            <h3>Marina Carbonell</h3>
+            <p>
+              Nacida y residente en Madrid, no se me puede considerar gata por muy poco. Estudié Turismo y me dediqué
+              unos años a ellos, aunque he dedicado los últimos años al Marketing Digital.
+              Me encanta cocinar y por ello comer y probar cosas nuevas, visitar mercadillos y museos, las cosas
+              antiguas, bucear y el cine y los conciertos.
+              Soy una mujer a la que le gusta saber que aporta su granito de arena en que las cosas a su alrededor sean
+              mejor, soy trabajadora, cariñosa y tenaz. Como seguro que quieres saber mi lado negativo, diré que soy
+              terca y pasional.
+              Un personaje que me representa puede ser una mezcla de Ameliè y Cactus de Las Supernenas.
+            </p>
+            <span class="socialmedia">
+              <a href="https://twitter.com/DiariodeunaN?s=09"> <i class="fab fa-twitter" title="Twitter"></i></a>
+              <a href="https://www.linkedin.com/in/marina-carbonell-%C3%A1lvarez-48903950/"><i
+                  class="fab fa-linkedin-in" title="LinkedIn"></i></a>
+              <a href="https://github.com/MarinaCarbonell"><i class="fab fa-github-alt" title="GitHub"></i></a>
+              <a id="last-child" href="mailto: marinacarbonellalvarez@gmail.com"><i class="fas fa-envelope"
+                  title="Email"></i></a>
+            </span>
           </div>
         </article>
-        <article class="article">
-          <div class="container-img">
-            <img src="./assets/images/img-profile-ana.jpg" alt="Ana" class="img-profile" />
+
+
+        <article class="about-us__article">
+          <div class="about-us__article--container">
+            <img src="./assets/images/img-profile-claudia.jpg" alt="Claudia" />
           </div>
-          <div class="article-info">
-            <h2>Ana Belén Funes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, officia! Reiciendis dolor velit
-              temporibus voluptatibus, exercitationem dicta nostrum. At eveniet reiciendis deleniti a maxime voluptates
-              ad quos nihil voluptate cumque.</p>
-            <ul class="social-media">
-              <li>
-                <a href="https://twitter.com/anajapy"><i class="fab fa-twitter" alt="Twitter"></i></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/anabel%C3%A9nfunes"><i class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li>
-                <a href="https://github.com/anapy"><i class="fab fa-github-alt"></i></a>
-              </li>
-              <li id="last-child">
-                <a href="mailto: anabelefunesc@gmail.com"><i class="fas fa-envelope"></i></a>
-              </li>
-            </ul>
+          <div class="about-us__article--info">
+            <h3>Claudia Santaella</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, cum? Eum
+              accusamus inventore quasi sunt quibusdam modi maxime similique laboriosam
+              mollitia deserunt asperiores in totam, quam necessitatibus, blanditiis
+              deleniti temporibus.
+            </p>
+            <span class="socialmedia">
+              <a href="https://twitter.com/__Santaella"> <i class="fab fa-twitter" title="Twitter"></i></a>
+              <a href="https://www.linkedin.com/in/claudia-santaella-61526a11"><i class="fab fa-linkedin-in"
+                  title="LinkedIn"></i></a>
+              <a href="https://github.com/claudiasanes"><i class="fab fa-github-alt" title="GitHub"></i></a>
+              <a id="last-child" href="mailto: claudiasanes@gmail.com"><i class="fas fa-envelope" title="Email"></i></a>
+            </span>
           </div>
         </article>
+
+
+        <article class="about-us__article">
+          <div class="about-us__article--container">
+            <img src="./assets/images/img-profile-cristina.jpg" alt="Cristina" />
+          </div>
+          <div class="about-us__article--info">
+            <h3>Cristina Carrascal</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, cum? Eum
+              accusamus inventore quasi sunt quibusdam modi maxime similique laboriosam
+              mollitia deserunt asperiores in totam, quam necessitatibus, blanditiis
+              deleniti temporibus.
+            </p>
+            <span class="socialmedia">
+              <a href="https://twitter.com/_chococrispis"> <i class="fab fa-twitter" title="Twitter"></i></a>
+              <a href="https://www.linkedin.com/in/cristina-carrascal/"><i class="fab fa-linkedin-in"
+                  title="LinkedIn"></i></a>
+              <a href="https://github.com/Cris-ti-na"><i class="fab fa-github-alt" title="GitHub"></i></a>
+              <a id="last-child" href="mailto: cristina.ccmm@gmail.com"><i class="fas fa-envelope"
+                  title="Email"></i></a>
+            </span>
+          </div>
+        </article>
+
+
+        <article class="about-us__article">
+          <div class="about-us__article--container">
+            <img src="./assets/images/img-profile-kayla.jpg" alt="Kayla" />
+          </div>
+          <div class="about-us__article--info">
+            <h3>Kayla Jean Crane</h3>
+            <p>
+              Originaria de Indiana, EEUU, actualmente vivo en Madrid. Estudié Idiomas (español y francés) y he dedicado
+              la mayor parte de mi vida a ser profesora.
+              Lo que más me gusta hacer es dedicarme a la jardinería y a cocinar, los perros y los gatos y, como guilty
+              pleasure, tumbarme a ver Netflix.
+              Soy una mujer perseverante, tenaz, amigable y curiosa, aunque también tengo que decir que soy un poco
+              cabezota.
+              Un personaje que me representa mucho es Grumpy Cat.
+            </p>
+            <span class="socialmedia">
+              <a href="https://twitter.com/KaylaJCrane"> <i class="fab fa-twitter" title="Twitter"></i></a>
+              <a href="https://www.linkedin.com/in/kaylacrane/"><i class="fab fa-linkedin-in" title="LinkedIn"></i></a>
+              <a href="https://github.com/kaylacrane"><i class="fab fa-github-alt" title="GitHub"></i></a>
+              <a id="last-child" href="mailto: kayla.crane@gmail.com"><i class="fas fa-envelope" title="Email"></i></a>
+            </span>
+          </div>
+        </article>
+
+
+        <article class="about-us__article">
+          <div class="about-us__article--container">
+            <img src="./assets/images/img-profile-ana.jpg" alt="Ana Belén" />
+          </div>
+          <div class="about-us__article--info">
+            <h3>Ana Belén Funes</h3>
+            <p>
+              Aunque nací en Málaga, actualmente vivo en Madrid. La pasión por aprender idiomas y conocer otras
+              culturas me llevó a estudiar Traducción e Interpretación de inglés y alemán. Aunque también he estudiado
+              algo de italiano, portugués y árabe. Actualmente estudio Ingeniería Informática a distancia.Cuando tengo
+              un rato libre me encanta cocinar (eso sí, ¡sin gluten!), leer, hacer yoga y viajar. Soy exigente,
+              autodidacta y aventurera y, si me preguntas por algo negativo de mi, te diré que soy impaciente. Un
+              personaje con el que me siento muy indentificada es Paloma, de la Elegancia del Erizo.
+            </p>
+            <span class="socialmedia">
+              <a href="https://twitter.com/anajapy"> <i class="fab fa-twitter" title="Twitter"></i></a>
+              <a href="https://www.linkedin.com/in/anabel%C3%A9nfunes"><i class="fab fa-linkedin-in"
+                  title="LinkedIn"></i></a>
+              <a href="https://github.com/anapy"><i class="fab fa-github-alt" title="GitHub"></i></a>
+              <a id="last-child" href="mailto: anabelefunesc@gmail.com"><i class="fas fa-envelope"
+                  title="Email"></i></a>
+            </span>
+          </div>
+        </article>
+
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="wrapper">
-      <p class="footer-copyright">Queens of Code © 2020</p>
-      <nav class="footer-menu">
+      <p class="footer__copyright">Queens of Code © 2020</p>
+      <nav class="footer__menu">
         <ul>
-          <li><a class="footer-link" title="Ir a Equipo" href="index.html#team">EQUIPO</a></li>
+          <li><a class="footer__menu--link" title="Ir a Equipo" href="index.html#team">EQUIPO</a></li>
 
-          <li><a class="footer-link" title="Ir a Quienes Somos" href="index.html#about-us">QUIENES SOMOS</a></li>
+          <li><a class="footer__menu--link" title="Ir a Quienes Somos" href="index.html#about-us">QUIÉNES SOMOS</a></li>
 
-          <li><a class="footer-link" title="Ir a Contacto" href="index.html#contact">CONTACTO</a></li>
+          <li><a class="footer__menu--link" title="Ir a Contacto" href="index.html#contact">CONTACTO</a></li>
         </ul>
       </nav>
-      <div class="footer-logo">
+      <div class="footer__logo">
         <a href="https://adalab.es/" title="Ir a la página de Adalab"><img src="./assets/images/logo-adalab.png"
             alt="Logo de Adalab" width="116px" height="45px" /></a>
       </div>
