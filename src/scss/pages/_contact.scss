@@ -54,13 +54,15 @@
   margin-top: 17px;
 }
 
-p {
+.small-paragraph {
   font-family: $secondary-font;
   text-align: center;
 }
 
 .first-paragraph {
   padding-bottom: 45px;
+  font-family: $secondary-font;
+  text-align: center;
 }
 
 .contact {
