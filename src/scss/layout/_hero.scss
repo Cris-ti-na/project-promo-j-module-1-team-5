@@ -3,6 +3,24 @@
   position: relative;
 }
 
+.hero-img img{
+  width: 100%;
+}
+
+.group-img-1 {
+  display: block;
+  @media (min-width: 768px) {
+    display: none;    
+  }
+}
+  
+.group-img-2 {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+} 
+
 .hero-claim {
   background-color: $light-color;
   padding: 15px;
