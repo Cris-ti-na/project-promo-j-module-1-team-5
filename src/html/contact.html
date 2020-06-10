@@ -8,11 +8,35 @@
   </head>
 
   <body>
-    <include src="./partials/header.html"></include>
+    <header class="header">
+      <div class="header__container">
+        <a href="./index.html">
+          <h1 class="header__title">
+            Queens of Code
+          </h1>
+        </a>
+      </div>
+      <div class="header__container menu">
+        <nav class="header__menu">
+          <ul class="header__menu--list">
+            <li>
+              <a href="./index.html#team">Equipo</a>
+            </li>
+            <li>
+              <a href="./index.html#about-us">Quiénes somos</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="hero-img">
-          <img src="./assets/images/hero-test-3.jpg" width="100%" />
+          <img class="group-img-1" src="./assets/images/img-hero-2.jpg" alt="Foto de equipo">
+          <img class="group-img-2" src="./assets/images/hero-test-3.jpg" alt="Foto de equipo">
         </div>
       </section>
       <div class="wrapper">
@@ -28,7 +52,7 @@
           </small>
         </p>
 
-        <form action="/signup" method="post" class="form">
+        <form action="https://formspree.io/xeqrkebj" method="post" class="form">
           <div class="form-group">
             <label for="fullName"
               >Nombre completo<span class="star"> *</span></label
