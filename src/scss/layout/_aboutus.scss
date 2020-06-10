@@ -7,16 +7,28 @@
     
     h2 {
     color: $primary-color;
-    font-size: rem(20);
+    font-size: rem(24);
+    line-height: 45px;
     text-transform: uppercase;
     font-family: $secondary-font;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 30px;
     /*border: 1px solid greenyellow;*/
     text-align: center;
+
+    @include tablet {
+    padding-top: 45px;
+    padding-bottom: 41px;
+    } 
+    }
+
+    &__list {
+      &item {
+      }
     }
   }
 }  
+
 
 .article {
   /*border: 1px solid red;*/
@@ -25,7 +37,14 @@
   text-align: center;
   margin: 45px 0;
 
-  @include tablet {
+  &:first-child {
+    margin-top: 0px;
+  }
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+ @include tablet {
     flex-direction: row;
     margin: 60px 0;
     text-align: left;
@@ -91,7 +110,6 @@
     }
   }
 }
-
 
 /* ARTICULOS AL REVES */
 
