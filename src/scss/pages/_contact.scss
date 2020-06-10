@@ -1,11 +1,29 @@
 
+* {
+  box-sizing: border-box;
+  color: inherit;
+  margin: 0;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.hero{
+  padding-bottom:45px ;
+}
+
+
 .form {
   display: flex;
   flex-direction: column;
+  font-family: $secondary-font;
+  padding:60px 0;
 }
 
 .form-group {
   display: block;
+  height: 61px;
+  margin-bottom:13px;
 }
 
 .form label,
@@ -23,7 +41,35 @@
   border-radius: 5px;
   box-shadow: none;
   text-transform: uppercase;
+  height: 45px;
+  width: 290px;
+  margin-top: 17px;
 }
+
+p {
+  font-family: $secondary-font;
+  text-align: center;
+}
+
+.first-paragraph{
+  padding-bottom:45px;
+}
+
+.contact {
+  font-family: $primary-font;
+  text-align: center;
+  padding-bottom:15px;
+  color:$primary-color;
+}
+
+.star{
+  color: $secondary-color;
+}
+
+label{
+  line-height: 45px;
+  }
+
 
 @media all and (min-width: 768px) {
   .email-tel {
@@ -38,5 +84,7 @@
     right: 0;
     padding: 12px 74px;
     width: max-content;
+    
+  
   }
 }
