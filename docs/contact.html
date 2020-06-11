@@ -1,59 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <title>Document</title>
+    <title>Contacto</title>
   </head>
+
   <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="./index.html">
+          <h1 class="header__title">
+            Queens of Code
+          </h1>
+        </a>
+      </div>
+      <div class="header__container menu">
+        <nav class="header__menu">
+          <ul class="header__menu--list">
+            <li>
+              <a href="./index.html#team">Equipo</a>
+            </li>
+            <li>
+              <a href="./index.html#about-us">Quiénes somos</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
+      <section class="hero">
+        <div class="hero-img">
+          <img class="group-img-1" src="./assets/images/img-hero-2.jpg" alt="Foto de equipo">
+          <img class="group-img-2" src="./assets/images/hero-test-3.jpg" alt="Foto de equipo">
+        </div>
+      </section>
       <div class="wrapper">
-        <h2>Contacto</h2>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, ipsam!
-          Maxime consequatur nam excepturi voluptates quae nostrum sed
-          voluptatibus quibusdam quasi, sit illum.
+        <h2 class="contact">Contacto</h2>
+        <p class="first-paragraph">
+          No lo dudes y envíanos tus comentarios, dudas, preguntas...¡Estaremos
+          encantadas de responderte!
+        </p>
+        <p class="small-paragraph">
+          <small>
+            Todos los campos marcados con <span class="star">*</span> son
+            obligatorios
+          </small>
         </p>
 
-        <form action="/signup" method="post" class="form">
+        <form action="https://formspree.io/xeqrkebj" method="post" class="form">
           <div class="form-group">
             <label for="fullName"
-              >Nombre completo
-              <input
-                type="text"
-                id="fullName"
-                name="fullName"
-                placeholder="Nombre..."
-                required
-            /></label>
+              >Nombre completo<span class="star"> *</span></label
+            >
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Nombre..."
+              required
+            />
           </div>
           <div class="form-group email-tel">
-            <label class="form__email" for="email"
-              >Email<input
+            <div class="form__email">
+              <label for="email">Email<span class="star"> *</span></label
+              ><input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="nombre.apellidos@mail.com"
                 required
-            /></label>
-            <label for="telephone"
-              >Teléfono<input
+              />
+            </div>
+            <div>
+              <label for="telephone">Teléfono</label
+              ><input
                 type="tel"
                 id="telephone"
                 name="telephone"
                 placeholder="Ej: 123456789"
-            /></label>
+              />
+            </div>
           </div>
           <div class="form-group">
             <label for="message"
-              >Mensaje
+              >Mensaje<span class="star"> *</span>
 
               <textarea
                 class="form__textarea"
@@ -69,5 +104,24 @@
         </form>
       </div>
     </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <p class="footer__copyright">Queens of Code © 2020</p>
+        <nav class="footer__menu">
+          <ul>
+            <li><a class="footer__menu--link" title="Ir a Equipo" href="index.html#team">EQUIPO</a></li>
+
+            <li><a class="footer__menu--link" title="Ir a Quienes Somos" href="index.html#about-us">QUIÉNES SOMOS</a></li>
+
+            <li><a class="footer__menu--link" title="Ir a Contacto" href="index.html#contact">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="footer__logo">
+          <a href="https://adalab.es/" title="Ir a la página de Adalab"><img src="./assets/images/logo-adalab.png"
+              alt="Logo de Adalab" width="116px" height="45px" /></a>
+        </div>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,11 +1,36 @@
+* {
+  box-sizing: border-box;
+  color: inherit;
+  margin: 0;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.hero {
+  padding-bottom: 45px;
+}
 
 .form {
   display: flex;
   flex-direction: column;
+  font-family: $secondary-font;
+  padding: 60px 0;
 }
 
 .form-group {
   display: block;
+  margin-bottom: 13px;
+}
+
+.form-group input {
+  border: solid 1px $lightgray-color;
+  height: 45px;
+  padding-left: 15px;
+}
+
+.form-group .form__textarea {
+  border: 1px solid $lightgray-color;
 }
 
 .form label,
@@ -15,6 +40,7 @@
 
 .form__textarea {
   width: 100%;
+  padding: 15px;
 }
 
 .form__button {
@@ -23,10 +49,39 @@
   border-radius: 5px;
   box-shadow: none;
   text-transform: uppercase;
+  height: 45px;
+  width: 290px;
+  margin-top: 17px;
+}
+
+.small-paragraph {
+  font-family: $secondary-font;
+  text-align: center;
+}
+
+.first-paragraph {
+  padding-bottom: 45px;
+  font-family: $secondary-font;
+  text-align: center;
+}
+
+.contact {
+  font-family: $primary-font;
+  text-align: center;
+  padding-bottom: 15px;
+  color: $primary-color;
+}
+
+.star {
+  color: $secondary-color;
+}
+
+label {
+  line-height: 45px;
 }
 
 @media all and (min-width: 768px) {
-  .email-tel {
+  .form-group.email-tel {
     display: flex;
     justify-content: space-between;
   }

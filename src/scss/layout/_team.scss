@@ -1,12 +1,14 @@
-.team .wrapper {
-  padding: 15px;
-}
+/*.team .wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}*/
+
 .team h2 {
   color: $secondary-color;
   font-family: $primary-font;
   text-align: center;
   font-size: rem(24);
-  padding: 15px 0;
+  padding: 45px 0 30px 0;
   text-transform: uppercase;
 }
 
@@ -15,5 +17,5 @@
   font-family: $secondary-font;
   text-align: center;
   font-size: rem(16);
-  padding: 15px 0;
+  padding-bottom: 45px;
 }
