@@ -1,78 +1,87 @@
-* {
-  box-sizing: border-box;
-  color: inherit;
-  margin: 0;
-  padding: 0px;
-  list-style-type: none;
-  text-decoration: none;
+.wrapper.contact {
+  padding: 30px 15px 60px;
+
+  @include tablet {
+    padding: 30px 163px 60px;
+  }
+  @include desktop {
+    padding: 45px 300px 120px;
+  }
 }
 
-.hero {
-  padding-bottom: 45px;
-}
-
-.form {
+.contact__form {
   display: flex;
   flex-direction: column;
   font-family: $secondary-font;
-  padding: 60px 0;
+  padding-top: 58px;
+
+  &-group {
+    display: block;
+  }
 }
 
-.form-group {
-  display: block;
-  margin-bottom: 13px;
-}
-
-.form-group input {
+.contact__form-group input {
   border: solid 1px $lightgray-color;
   height: 45px;
   padding-left: 15px;
 }
 
-.form-group .form__textarea {
+.contact__form-group .contact__form--textarea {
   border: 1px solid $lightgray-color;
 }
 
-.form label,
-.form input {
+.contact__form label,
+.contact__form input {
   width: 100%;
 }
 
-.form__textarea {
+.contact__form--textarea {
   width: 100%;
   padding: 15px;
+  height: 105px;
 }
 
-.form__button {
-  color: white;
-  background-color: #099d8d;
+.contact__form--button {
+  color: $light-color;
+  background-color: $primary-color;
   border-radius: 5px;
-  box-shadow: none;
   text-transform: uppercase;
+  letter-spacing: 1.2px;
   height: 45px;
-  width: 290px;
-  margin-top: 17px;
+  margin-top: 30px;
+  border: 1px solid $primary-color;
+  align-self: flex-start;
+  @include tablet {
+    padding: 12px 74px;
+    max-width: 206px;
+    align-self: flex-end;
+  }
+  @include desktop {
+    max-width: 278px;
+  }
 }
 
-.small-paragraph {
+.contact__small-paragraph {
   font-family: $secondary-font;
   text-align: center;
 }
 
-.first-paragraph {
+.contact__first-paragraph {
   padding-bottom: 45px;
   font-family: $secondary-font;
   text-align: center;
 }
 
-.contact {
+.contact__title {
   font-family: $primary-font;
   text-align: center;
+
   padding-bottom: 15px;
   color: $primary-color;
+  text-transform: uppercase;
 }
 
-.star {
+.contact__star {
   color: $secondary-color;
 }
 
@@ -80,18 +89,13 @@ label {
   line-height: 45px;
 }
 
-@media all and (min-width: 768px) {
-  .form-group.email-tel {
+@include desktop {
+  .contact__form-group.email-tel {
     display: flex;
     justify-content: space-between;
   }
-  .form__email {
+  .contact__form--email {
     min-width: 70%;
     padding-right: 20px;
-  }
-  .form__button {
-    right: 0;
-    padding: 12px 74px;
-    width: max-content;
   }
 }
