@@ -84,15 +84,15 @@
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
-  .front-img {
-    background-color: #2980b9;
+    
   }
 
   .back-img {
     transform: rotateY(180deg);    
     background-color: $secondary-color;
     color: white;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   
   &--info {
