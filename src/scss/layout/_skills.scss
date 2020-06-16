@@ -38,9 +38,7 @@
 
   & h3 {
     color: $primary-color;
-    /* #blue-green #099d8d */
     font-family: $primary-font;
-    /* Rubik-Medium */
     align-content: center;
     font-size: rem(22);
     padding: 10px 0;
@@ -54,9 +52,7 @@
 
   & p {
     color: $darkgrey-color;
-    /* dark grey #54585a */
     font-family: $secondary-font;
-    /* OpenSans */
     font-size: rem(16);
     padding: 0 0 15px 0;
     @include tablet {
