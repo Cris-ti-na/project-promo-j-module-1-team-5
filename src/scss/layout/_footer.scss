@@ -8,16 +8,11 @@
     box-sizing: border-box;
     padding-top: 30px;
     padding-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     @include tablet {
       padding-bottom: 60px;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: baseline;
-      position: relative;
     }
     @include desktop {
       padding-bottom: 50px;
@@ -26,16 +21,23 @@
   &__copyright {
     margin-bottom: 10px;
     color: $lightgray-color;
+    grid-column: span 2;
     @include tablet {
+      grid-column: span 1;
       margin: 0px;
-      text-align: left;
+      padding-bottom: 20px;
+      justify-self: start;
     }
   }
   &__menu {
+    grid-column: span 2;
     margin: 0;
     padding: 10px 0 10px;
     text-align: center;
     @include tablet {
+      justify-self: end;
+      grid-column: span 1;
+      grid-row: span 2;
       text-align: right;
       padding: 0;
     }
@@ -49,10 +51,7 @@
       & li {
         padding: 0 0 5px;
         @include tablet {
-          padding: 0 0 10px 0;
-        }
-        @include desktop {
-          padding: 0 0 10px;
+          padding: 8px 0;
         }
       }
     }
@@ -68,11 +67,12 @@
     }
   }
   &__logo {
+    grid-column: span 2;
     padding-top: 10px;
     padding-bottom: 15px;
     @include tablet {
-      position: absolute;
-      transform: translate(0px, 30px);
+      justify-self: start;
+      grid-column: span 1;
       padding: 0px;
     }
   }
