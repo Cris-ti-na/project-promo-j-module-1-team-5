@@ -1,11 +1,18 @@
 @mixin tablet {
-    @media all and (min-width: 768px) {
-        @content;
-    }
+  @media all and (min-width: 768px) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media all and (min-width: 1200px) {
-        @content;
-    }
+  @media all and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin hover-highlight {
+  &:hover {
+    color: $light-color;
+    text-shadow: 0 0 15px $dark-color;
+  }
 }

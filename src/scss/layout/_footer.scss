@@ -57,9 +57,11 @@
       }
     }
     &--link {
+      @include hover-highlight;
       color: $darkgrey-color;
       opacity: 0.75;
       text-decoration: none;
+
       @include tablet {
         text-align: right;
       }
