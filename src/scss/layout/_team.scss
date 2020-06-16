@@ -3,19 +3,22 @@
   padding-bottom: 15px;
 }*/
 
-.team h2 {
-  color: $secondary-color;
-  font-family: $primary-font;
-  text-align: center;
-  font-size: rem(24);
-  padding: 45px 0 30px 0;
-  text-transform: uppercase;
+.team{
+  h2 {
+    color: $secondary-color;
+    font-family: $primary-font;
+    text-align: center;
+    font-size: rem(24);
+    padding: 45px 0 30px 0;
+    text-transform: uppercase;
+  }
+  p {
+    color: $darkgrey-color;
+    font-family: $secondary-font;
+    text-align: center;
+    font-size: rem(16);
+    padding-bottom: 45px;
+  }
+
 }
 
-.team p {
-  color: $darkgrey-color;
-  font-family: $secondary-font;
-  text-align: center;
-  font-size: rem(16);
-  padding-bottom: 45px;
-}
