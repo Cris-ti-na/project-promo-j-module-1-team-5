@@ -1,52 +1,51 @@
-.hero .wrapper {
+.hero {
   height: 100%;
   position: relative;
-}
 
-.hero-img img{
-  width: 100%;
-}
-
-.group-img-1 {
-  display: block;
-  @media (min-width: 768px) {
-    display: none;    
+  &__img {
+    img {
+      width: 100%;
+    }
+    &--group1 {
+      display: block;
+      @media (min-width: 768px) {
+        display: none;    
+      }
+    }
+    &--group2 {
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
   }
-}
-  
-.group-img-2 {
-  display: none;
-  @media (min-width: 768px) {
-    display: block;
+  &__claim {
+    background-color: $light-color;
+    padding: 15px;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: rem(18);
+    text-align: center;
+    width: fit-content;
+    position: absolute;
+    bottom: -20px;
+    @media (min-width: 768px) {
+      background-color: transparentize($light-color, 0.2);
+      bottom: -1px;
+      padding: 15px 30px;    
+    }
+    @media (min-width: 1200px) {
+      font-size: rem(24);    
+    }
+    /* NO VEMOS SU FUNCION */
+    /*span {
+      bottom: -20px;
+    }*/
   }
-} 
 
-.hero-claim {
-  background-color: $light-color;
-  padding: 15px;
-  font-family: $secondary-font;
-  font-weight: 700;
-  font-size: rem(18);
-  text-align: center;
-  width: fit-content;
-  position: absolute;
-  bottom: -20px;
 }
 
-.hero-claim span {
-  bottom: -20px;
-}
-
-@media all and (min-width: 768px) {
-  .hero-claim {
-    background-color: transparentize($light-color, 0.2);
-    bottom: -1px;
-    padding: 15px 30px;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .hero-claim {
-    font-size: rem(24);
-  }
+.wrapper {
+  height: 100%;
+  position: relative;
 }
