@@ -48,16 +48,15 @@ a {
 
 .content {
   position: relative;
-}
-
-.content__target {
-  position: absolute;
-  /*background-color: red;
-  width: 10px;
-  height: 10px;*/
-  left: 0;
-  top: -105px;
-  @include tablet {
-    top: -60px;
+  &__target {
+    position: absolute;
+    /*background-color: red;
+    width: 10px;
+    height: 10px;*/
+    left: 0;
+    top: -105px;
+    @include tablet {
+      top: -60px;
+    }
   }
 }

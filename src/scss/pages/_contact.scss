@@ -9,80 +9,66 @@
   }
 }
 
-.contact__form {
-  display: flex;
-  flex-direction: column;
-  font-family: $secondary-font;
-  padding-top: 58px;
-
-  &-group {
-    display: block;
+.contact {
+  &__title {
+    font-family: $primary-font;
+    text-align: center;
+    padding-bottom: 15px;
+    color: $primary-color;
+    text-transform: uppercase;
   }
-}
-
-.contact__form-group input {
-  border: solid 1px $lightgray-color;
-  height: 45px;
-  padding-left: 15px;
-}
-
-.contact__form-group .contact__form--textarea {
-  border: 1px solid $lightgray-color;
-}
-
-.contact__form label,
-.contact__form input {
-  width: 100%;
-}
-
-.contact__form--textarea {
-  width: 100%;
-  padding: 15px;
-  height: 105px;
-}
-
-.contact__form--button {
-  color: $light-color;
-  background-color: $primary-color;
-  border-radius: 5px;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  height: 45px;
-  margin-top: 30px;
-  border: 1px solid $primary-color;
-  align-self: flex-start;
-  @include tablet {
-    padding: 12px 74px;
-    max-width: 206px;
-    align-self: flex-end;
+  &__paragraph {
+    font-family: $secondary-font;
+    text-align: center;
+    &--first {
+      padding-bottom: 45px;
+    }
+  } 
+  &__form {
+    display: flex;
+    flex-direction: column;
+    font-family: $secondary-font;
+    padding-top: 58px;
+    label, input{
+      width: 100%;
+    }
+    &--textarea {
+      border: 1px solid $lightgray-color;
+      width: 100%;
+      padding: 15px;
+      height: 105px;
+    }
+    &--group {
+      display: block;
+      input {
+        border: solid 1px $lightgray-color;
+        height: 45px;
+        padding-left: 15px;
+      }
+    }
+    &--button {
+      color: $light-color;
+      background-color: $primary-color;
+      border-radius: 5px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      height: 45px;
+      margin-top: 30px;
+      border: 1px solid $primary-color;
+      align-self: flex-start;
+      @include tablet {
+        padding: 12px 74px;
+        max-width: 206px;
+        align-self: flex-end;
+      }
+      @include desktop {
+        max-width: 278px;
+      }
+    }
   }
-  @include desktop {
-    max-width: 278px;
+  &__star {
+    color: $secondary-color;
   }
-}
-
-.contact__small-paragraph {
-  font-family: $secondary-font;
-  text-align: center;
-}
-
-.contact__first-paragraph {
-  padding-bottom: 45px;
-  font-family: $secondary-font;
-  text-align: center;
-}
-
-.contact__title {
-  font-family: $primary-font;
-  text-align: center;
-
-  padding-bottom: 15px;
-  color: $primary-color;
-  text-transform: uppercase;
-}
-
-.contact__star {
-  color: $secondary-color;
 }
 
 label {
@@ -90,7 +76,7 @@ label {
 }
 
 @include desktop {
-  .contact__form-group.email-tel {
+  .contact__form--group.email-tel {
     display: flex;
     justify-content: space-between;
   }
