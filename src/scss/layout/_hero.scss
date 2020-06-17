@@ -2,6 +2,7 @@
   height: 100%;
   position: relative;
 
+
   &__img {
     img {
       width: 100%;
@@ -17,8 +18,10 @@
       @media (min-width: 768px) {
         display: block;
       }
+
     }
   }
+
   &__claim {
     background-color: $light-color;
     padding: 15px;
