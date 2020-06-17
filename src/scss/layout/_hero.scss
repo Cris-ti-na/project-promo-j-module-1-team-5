@@ -18,7 +18,10 @@
       @media (min-width: 768px) {
         display: block;
       }
-
+      @media (min-width: 1200px) {
+        max-height: 75vh;
+        object-fit: cover;
+      }
     }
   }
 
@@ -47,6 +50,7 @@
   }
 
 }
+
 .wrapper {
   height: 100%;
   position: relative;
